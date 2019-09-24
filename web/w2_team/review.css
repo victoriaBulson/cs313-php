@@ -4,12 +4,14 @@ div:hover {
 
 #divOne {
    color: purple;
-   background-color: cyan; 
+   background-color: cyan;
+   font-size: 3em;
 }
 
 .otherDivs {
    color: cyan;
    background-color: black;
+   font-size: 5em;
 }
 
 #
