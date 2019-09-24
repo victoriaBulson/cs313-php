@@ -1,4 +1,4 @@
-function changeColor()(
-   document.write("HEY");
+function changeColor(){
+   document.getElementById("divOne").style.color = 'blue';
 }
 
