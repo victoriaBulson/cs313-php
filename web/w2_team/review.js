@@ -3,6 +3,7 @@ function clicked(){
 }
 
 function changeColor(){
-   document.getElementById('divOne').style.color = document.getElementById('color').value;
+   //document.getElementById('divOne').style.color = document.getElementById('color').value;
+   $("#divOne").css({"backgroundColor":pink);
 }
 
