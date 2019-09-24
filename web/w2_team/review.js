@@ -1,4 +1,4 @@
 function changeColor()(
-   document.getElementById(divOne)style.color = document.getElementByName(color).value;
+   document.getElementById(divOne)style.color = 'red';
 }
 
