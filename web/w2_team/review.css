@@ -2,3 +2,7 @@ div:hover {
    font-weight: bold;
    font-color: red;
 }
+
+#divOne {
+   color: red;
+}
