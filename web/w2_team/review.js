@@ -1,5 +1,5 @@
 function clicked(){
-   alert("Clicked!!);
+   alert("Clicked!!");
 }
 
 function changeColor(){
