@@ -1,8 +1,15 @@
 div:hover {
    font-weight: bold;
-   font-color: red;
 }
 
 #divOne {
-   color: red;
+   color: purple;
+   background-color: cyan; 
 }
+
+.otherDivs {
+   color: cyan;
+   background-color: black;
+}
+
+#
