@@ -1,0 +1,20 @@
+header {
+   background: navy;
+   color: white;
+{
+
+body {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  width: 100vw;
+  height: 100vh;
+}
+
+.orange {
+  background: orange;
+}
+
+.blue {
+   background: cyan;
+}
