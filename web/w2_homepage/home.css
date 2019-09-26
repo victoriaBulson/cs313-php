@@ -1,7 +1,7 @@
 header {
    background: navy;
    color: white;
-{
+}
 
 body {
   display: grid;
@@ -12,7 +12,7 @@ body {
 }
 
 .orange {
-  background-color: yellow;
+  background-color: orange;
 }
 
 .blue {
