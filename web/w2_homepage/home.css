@@ -10,9 +10,11 @@ header {
 
 div {
   padding: 3em;
+  margin: 1em;
 }
 
 body {
+  background-color: navy;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 10% 45% 45%;
