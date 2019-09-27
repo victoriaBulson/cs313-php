@@ -11,7 +11,7 @@ div {
 body {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 10% 45% 45%;
   width: 100vw;
   height: 100vh;
 }
@@ -26,5 +26,5 @@ body {
 
 #startTwo {
   grid-column-start:1;
-  grid-row-start:2;
+  grid-row-start:3;
 }
