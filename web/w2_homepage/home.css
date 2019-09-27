@@ -1,8 +1,10 @@
 header {
   grid-row-start: 1;
+  grid-row-end: 2;
   background: navy;
   color: white;
   text-align: center;
+
 }
 
 div {
@@ -23,6 +25,17 @@ body {
 
 .blue {
   background-color: cyan;
+}
+
+#talent {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  
+}
+
+#academics{
+  grid-column-start: 2;
+  grid-row-start: 2;
 }
 
 #family {
