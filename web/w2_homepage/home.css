@@ -30,13 +30,13 @@ body {
 
 #talent {
   grid-column-start: 2;
-  grid-row-start: 2;
+  grid-row-start: 3;
   
 }
 
 #academics{
   grid-column-start: 2;
-  grid-row-start: 1;
+  grid-row-start: 2;
 }
 
 #family {
@@ -48,3 +48,4 @@ body {
   grid-row-start: 2;
   grid-column-start: 1;
 }
+
