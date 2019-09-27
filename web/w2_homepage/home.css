@@ -17,5 +17,10 @@ body {
 }
 
 .blue {
-   background-color: cyan;
+  background-color: cyan;
+}
+
+#startTwo {
+  grid-column-start:1;
+  grid-row-start:2;
 }
