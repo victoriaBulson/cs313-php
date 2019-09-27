@@ -1,7 +1,11 @@
 header {
   background: navy;
   color: white;
-  width: 100vw;
+  text-align: center;
+}
+
+div {
+  padding: 3em;
 }
 
 body {
