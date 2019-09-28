@@ -25,13 +25,13 @@
         <li><a href="../asssignments.html">Web Engineering</a></li>
      </ul>
   </div>
-  <div id="family" class="blue">
-    <h3>Family</h3>
-    <img src="../pics/groundhogs.jpg" alt="Wedding Pic">
+  <div id="family" class="blue imgHolder">
+    <h3 class="imgHead">Family</h3>
+    <img class="imgHeld" src="../pics/groundhogs.jpg" alt="Wedding Pic">
   </div>
-  <div id="talent" class="orange">
-    <h3 id="talentHead">Talents</h3>
-    <video width="310" height="230" controls>
+  <div class="imgHolder" class="orange">
+    <h3 class="imgHead">Talents</h3>
+    <video class="imgHeld" width="310" height="230" controls>
       <source src="../pics/redFlags.MOV" type="video/mp4">
       Your browser does not support the video tag.
     </video>

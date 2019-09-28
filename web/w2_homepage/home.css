@@ -8,12 +8,12 @@ header {
 }
 
 img {
-  width:300px;
+  width:250px;
   height:200px;
 }
 
-a: hover {
-  color: #FF6347
+a:hover {
+  color: #FF6347;
 }
 
 div {
@@ -40,18 +40,18 @@ body {
   background-color: cyan;
 }
 
-#talent {
+.imgHolder {
   grid-column-start: 2;
   grid-row-start: 3;
   display: grid;
   grid-template-columns: 25% 75%;
 }
 
-#talentHead{
+.imgHead{
   grid-column-start: 1;
 }
 
-vido {
+.imgHeld {
   grid-column-start: 2;
 }
 
