@@ -14,7 +14,7 @@ div {
 }
 
 body {
-  font-family: bookman;
+  font-family: courier;
   background-color: navy;
   display: grid;
   grid-template-columns: 50% 50%;
