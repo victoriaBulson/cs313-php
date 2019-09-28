@@ -4,7 +4,7 @@
 
   <title>313 Assignments</title>
   <meta name="Description" content="313 assignments">
-
+  <link rel="stylesheet" href="w2_homepage/home.css">
 </head>
 <?php include 'w2_homepage/header.php'?>
 <body>
