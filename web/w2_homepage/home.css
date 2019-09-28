@@ -8,6 +8,10 @@ header {
 
 }
 
+a: hover {
+  color: #FF6347
+}
+
 div {
   padding: .5em;
   padding-left: 3em;
