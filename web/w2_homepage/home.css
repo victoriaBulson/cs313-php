@@ -34,7 +34,16 @@ body {
 #talent {
   grid-column-start: 2;
   grid-row-start: 3;
-  
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+#talentHead{
+  grid-column-start: 1;
+}
+
+vido {
+  grid-column-start: 2;
 }
 
 #academics{
