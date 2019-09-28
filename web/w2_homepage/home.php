@@ -30,7 +30,6 @@
   <div id="family" class="blue">
     <h3>Family</h3>
     <?php
-      <img src="../pics/wedding1.JPG" alt="wedding" />
     ?>
   </div>
   <div id="talent" class="orange">
