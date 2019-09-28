@@ -9,7 +9,8 @@ header {
 }
 
 div {
-  padding: 1em;
+  padding: .5em;
+  padding-left: 3em;
   margin: 1em;
 }
 
