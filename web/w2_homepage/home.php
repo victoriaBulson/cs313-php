@@ -30,9 +30,7 @@
   <div id="family" class="blue">
     <h3>Family</h3>
     <?php
-      $image = exif_thumbnail('../pics/wedding1.JPG, $width, $height, $type);
-
-      echo "<img  width='$width' height='$height' src='data:image/gif;base64,".base64_encode($image)."'>";
+      <img src="../pics/wedding1.JPG" alt="wedding" />
     ?>
   </div>
   <div id="talent" class="orange">
