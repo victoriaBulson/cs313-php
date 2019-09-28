@@ -29,7 +29,7 @@
     <h3 class="imgHead">Family</h3>
     <img class="imgHeld" src="../pics/groundhogs.jpg" alt="Wedding Pic">
   </div>
-  <div class="imgHolder" class="orange">
+  <div class="imgHolder orange">
     <h3 class="imgHead">Talents</h3>
     <video class="imgHeld" width="310" height="230" controls>
       <source src="../pics/redFlags.MOV" type="video/mp4">
