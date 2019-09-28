@@ -22,7 +22,7 @@
         <li>Senior Project</li>
         <li>Software Engineering 1</li>
         <li>Project Management</li>
-        <li><a href="../asssignments.html">Web Engineering</a></li>
+        <li><a href="../assignments.php">Web Engineering</a></li>
      </ul>
   </div>
   <div id="family" class="blue imgHolder">
