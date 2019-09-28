@@ -1,6 +1,7 @@
 header {
   grid-row-start: 1;
   grid-row-end: 2;
+  margin-bottom: 1em;
   background: navy;
   color: white;
   width: 100vw;
