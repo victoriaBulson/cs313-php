@@ -27,7 +27,7 @@
   </div>
   <div id="family" class="blue">
     <h3>Family</h3>
-    <img src="Wedding1.JPG" alt="Wedding Pic">
+    <img src="../pics/Wedding1.JPG" alt="Wedding Pic">
   </div>
   <div id="talent" class="orange">
     <h3 id="talentHead">Talents</h3>
