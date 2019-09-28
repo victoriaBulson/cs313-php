@@ -8,6 +8,8 @@
 </head>
 <?php include 'w2_homepage/header.php'?>
 <body>
-  <h1 style="font-family:courier;">Assignments Coming Soon</h1>
+  <div>
+    <h1 style="font-family:courier;">Assignments Coming Soon</h1>
+  </div>
 </body>
 </html>
