@@ -8,7 +8,7 @@
 </head>
 <?php include 'w2_homepage/header.php'?>
 <body>
-  <div>
+  <div id="quote">
     <h1 style="font-family:courier;">Assignments Coming Soon</h1>
   </div>
 </body>
