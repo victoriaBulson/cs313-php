@@ -10,9 +10,7 @@
 
 </head>
 
-<header>
-  <h1>Victoria Bulson Mears</h1>
-</header>
+<?php include 'header.php'; ?>
 <body>
   <div id="quote" class="orange">
     <h3>"We Need Women Who Know How To Make Important Things Happen By Their Faith"</h3>
@@ -29,8 +27,7 @@
   </div>
   <div id="family" class="blue">
     <h3>Family</h3>
-    <?php
-    ?>
+    <img src="Wedding1.JPG" alt="Wedding Pic">
   </div>
   <div id="talent" class="orange">
     <h3 id="talentHead">Talents</h3>
