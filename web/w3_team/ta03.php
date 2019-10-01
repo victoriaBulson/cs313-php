@@ -45,9 +45,11 @@ $continents = $_POST['continents'];
 
     echo("You selected $N continents: <br>");
 
-foreach($_POST['continents'] as $selected){
-  echo "You have selected: ". $selected."</br>";
-}
+    foreach($_POST['continents'] as $selected){
+    echo "You have selected: ". $selected."</br>";
+    }
+  }
+ 
   
 ?>
 
