@@ -12,46 +12,46 @@
     
 <body id="browse_page">
     <div class="browse_row">
-        <div>
+        <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
-        <div>
+        <div class="item_2">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
-        <div>
+        <div class="item_3">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
-        <div>
+        <div class="item_4">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
     </div>
         
     <div class="browse_row">
-        <div>
+        <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
-        <div>
+        <div class="item_2">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
-        <div>
+        <div class="item_3">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
-        <div>
+        <div class="item_4">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
     </div>
     
     <div class="browse_row">
-        <div>
+        <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
-        <div>
+        <div class="item_2">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
-        <div>
+        <div class="item_3">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
-        <div>
+        <div class="item_4">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
     </div>
