@@ -2,13 +2,53 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Hello World</title>
-  <meta name="Description" content="Hello WOrld">
-  <meta name="Victoria Mears" content="Hello World">
-
+  <title>Browse</title>
+  <meta name="Description" content="Broswe Miracle Max">
+  <meta name="Victoria Mears" content="Miracle Max Apothecary">
+    
 </head>
 
-<body>
-  <h1 style="color:red; fontf-family:courier;">Hello World</h1>
+<?php include 'header.php'; ?>
+    
+<body id="browse_page">
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+    
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+    
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+    
 </body>
 </html>
