@@ -1,11 +1,12 @@
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Browse</title>
-  <meta name="Description" content="Broswe Miracle Max">
-  <meta name="Victoria Mears" content="Miracle Max Apothecary">
-    
+    <title>Browse</title>
+    <meta name="Description" content="Broswe Miracle Max">
+    <meta name="Victoria Mears" content="Miracle Max Apothecary">
+
+    <link rel="stylesheet" type="text/css" href="shopping.css">
 </head>
 
 <?php include 'header.php'; ?>
