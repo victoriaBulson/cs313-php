@@ -1,6 +1,3 @@
 <header>
-    <div>
-        <h1>Miracle Max Apothecary</h1>
-        <img src="pics/handcart.png" alt="Shopping Cart" style="width:5pcx; height:5px;">
-    </div>
+Miracle Max Apothecary <img src="pics/handcart.png" alt="Shopping Cart" style="width:50px; height:50px;">
 </header>

@@ -11,6 +11,7 @@
 <?php include 'header.php'; ?>
     
 <body id="browse_page">
+    <div class="browse_row">
         <div>
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
@@ -23,7 +24,24 @@
         <div>
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
+    </div>
+        
+    <div class="browse_row">
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+        <div>
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+    </div>
     
+    <div class="browse_row">
         <div>
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
@@ -36,19 +54,7 @@
         <div>
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
-    
-        <div>
-            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
-        </div>
-        <div>
-            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
-        </div>
-        <div>
-            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
-        </div>
-        <div>
-            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
-        </div>
+    </div>
     
 </body>
 </html>

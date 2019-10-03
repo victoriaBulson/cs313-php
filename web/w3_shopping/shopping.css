@@ -1,9 +1,12 @@
+header{
+    font-size: 20em;
+}
 .browse_img{
     width=20vw;
     height=25vw;
 }
 
-browse_page{
+browse_row{
     display:grid;
     grid-template-columns: auto auto auto auto;
 }
