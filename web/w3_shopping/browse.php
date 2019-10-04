@@ -31,6 +31,7 @@
     <div class="browse_row">
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+            <button>Add to cart</button>
         </div>
         <div class="item_2">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
