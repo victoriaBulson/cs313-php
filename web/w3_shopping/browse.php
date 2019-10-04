@@ -9,9 +9,11 @@
     <link rel="stylesheet" type="text/css" href="shopping.css">
 </head>
 
-<?php include 'header.php'; ?>
+
     
 <body id="browse_page">
+<?php include 'header.php'; ?>
+    
     <div class="browse_row">
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
