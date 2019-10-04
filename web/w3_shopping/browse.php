@@ -11,7 +11,7 @@
 
 <?php include 'header.php'; ?>
     
-<body id="browse_page" style="grid-row-start:2;">
+<body id="browse_page" style="">
     <div class="browse_row">
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
@@ -27,7 +27,7 @@
         </div>
     </div>
         
-    <div class="browse_row" style="grid-row-start:3;">
+    <div class="browse_row" style="">
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
@@ -42,7 +42,7 @@
         </div>
     </div>
     
-    <div class="browse_row" style="grid-row-start:4;">
+    <div class="browse_row" style="">
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
