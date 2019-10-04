@@ -11,7 +11,7 @@
 
 <?php include 'header.php'; ?>
     
-<body id="browse_page" style="padding-top:1em; grid-row-start:2;">
+<body id="browse_page" style="padding-top:1em; margin-top:5em; grid-row-start:2;">
     <div class="browse_row">
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
