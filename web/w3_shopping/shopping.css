@@ -2,6 +2,8 @@ header{
     width: 100vw;
     font-size: 5em;
     text-align: center;
+    display:flex;
+    justify-content: space-around
 }
 .browse_img{
     width:10vw;
