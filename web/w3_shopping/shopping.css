@@ -10,7 +10,6 @@ header{
 }
 
 .browse_page{
-    display:grid;
     grid-template-rows: auto auto auto auto;
 }
 
