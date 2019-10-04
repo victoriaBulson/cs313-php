@@ -16,6 +16,10 @@
     <div class="browse_row">
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+            <div class="info">
+                <button>Add to cart</button>
+                <p>Love Potion $42</p>
+            </div>
         </div>
         <div class="item_2">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
@@ -29,33 +33,31 @@
     </div>
         
     <div class="browse_row">
-        <div class="item_1">
-            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
-            <button>Add to cart</button>
-            <p>Love Potion $42</p>
-        </div>
-        <div class="item_2">
+        <div class="item">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
-        <div class="item_3">
+        <div class="item">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
-        <div class="item_4">
+        <div class="item">
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+        <div class="item">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
     </div>
     
     <div class="browse_row">
-        <div class="item_1">
+        <div class="item">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
-        <div class="item_2">
+        <div class="item">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
-        <div class="item_3">
+        <div class="item">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
-        <div class="item_4">
+        <div class="item">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
     </div>
