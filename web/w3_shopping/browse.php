@@ -9,7 +9,9 @@
     <link rel="stylesheet" type="text/css" href="shopping.css">
 </head>
 
-<?php include 'header.php'; ?>
+<header>
+    Miracle Max Apothecary <img src="pics/handcart.png" alt="Shopping Cart" style="width:100px; height:100px; float:right;">
+</header>
     
 <body id="browse_page" style="">
     <div class="browse_row">
