@@ -2,6 +2,7 @@ header{
     float: right;
     font-size: 5em;
     text-align: center;
+    grid-row-start:1;
 }
 .browse_img{
     width:10vw;
