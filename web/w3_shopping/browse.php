@@ -25,6 +25,9 @@
         <div class="item_4">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
+        <div class="item_5">
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
     </div>
         
     <div class="browse_row" style="">
@@ -40,6 +43,9 @@
         <div class="item_4">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
+        <div class="item_5">
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
     </div>
     
     <div class="browse_row" style="">
@@ -53,6 +59,9 @@
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
         <div class="item_4">
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+        </div>
+        <div class="item_5">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
     </div>
