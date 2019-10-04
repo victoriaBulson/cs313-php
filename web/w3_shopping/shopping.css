@@ -10,9 +10,9 @@ header{
     height:12vw;
 }
 
-.browse_page{    
+.browse_page{ 
 }
 
 .browse_row{
-    float: left;
+    display: flex;
 }
