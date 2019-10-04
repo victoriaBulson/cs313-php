@@ -14,7 +14,7 @@
 </header>
     
 <body id="browse_page" >
-    <div class="browse_row" style="grid-row-start:2; background-color:red;">
+    <div class="browse_row" style="background-color:red;">
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
@@ -29,7 +29,7 @@
         </div>
     </div>
         
-    <div class="browse_row" style="grid-row-start:3; background-color:green;">
+    <div class="browse_row" style="background-color:green;">
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
@@ -44,7 +44,7 @@
         </div>
     </div>
     
-    <div class="browse_row" style="grid-row-start:4; background-color:black;">
+    <div class="browse_row" style="background-color:black;">
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
