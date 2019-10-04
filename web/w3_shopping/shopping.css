@@ -4,6 +4,7 @@ header{
     font-size: 5em;
     text-align: center;
     grid-row-start:1;
+    grid-row-end:2;
 }
 .browse_img{
     width:10vw;
