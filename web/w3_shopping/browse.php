@@ -13,7 +13,7 @@
     Miracle Max Apothecary <img src="pics/handcart.png" alt="Shopping Cart" style="width:100px; height:100px; float:right;">
 </header>
     
-<body id="browse_page" style="grid-row-start:2;">
+<body id="browse_page" style="grid-row-start:2; background-color:red;">
     <div class="browse_row">
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
@@ -29,7 +29,7 @@
         </div>
     </div>
         
-    <div class="browse_row" style="grid-row-start:3;">
+    <div class="browse_row" style="grid-row-start:3; background-color:green;">
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
@@ -44,7 +44,7 @@
         </div>
     </div>
     
-    <div class="browse_row" style="grid-row-start:4;">
+    <div class="browse_row" style="grid-row-start:4; background-color:black;">
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
