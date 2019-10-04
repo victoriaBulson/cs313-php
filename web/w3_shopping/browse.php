@@ -14,7 +14,7 @@
 </header>
     
 <body id="browse_page" >
-    <div class="browse_row" style="background-color:red;">
+    <div class="browse_row" style="background-color:red; float: left;">
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
         </div>
