@@ -8,6 +8,11 @@ header{
     height:12vw;
 }
 
+.browse_page{
+    display:grid;
+    grid-template-rows: auto auto auto auto
+}
+
 .browse_row{
     display:grid;
     grid-template-columns: auto auto auto auto;
