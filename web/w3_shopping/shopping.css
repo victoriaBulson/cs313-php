@@ -1,11 +1,11 @@
 header{
+    float: right;
     font-size: 5em;
     text-align: center;
 }
-
 .browse_img{
-    width:100px;
-    height:100px;
+    width:10vw;
+    height:12vw;
 }
 
 .browse_row{
