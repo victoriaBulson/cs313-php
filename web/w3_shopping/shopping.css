@@ -15,4 +15,5 @@ header{
 
 .browse_row{
     display: flex;
+    justify-content: space-around;
 }
