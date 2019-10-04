@@ -1,3 +1,3 @@
 <header>
-    Miracle Max Apothecary <img src="pics/handcart.png" alt="Shopping Cart" style="width:100px; height:100px;">
+    Miracle Max Apothecary <img src="pics/handcart.png" alt="Shopping Cart" style="width:100px; height:100px; float:right;">
 </header>
