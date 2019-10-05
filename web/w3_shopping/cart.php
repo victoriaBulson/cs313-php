@@ -13,7 +13,7 @@
     
 <?php include 'header.php';?>
     
-<body onload="loadCart()">
+<body id="cart_page" onload="loadCart()">
     
 </body>
     
