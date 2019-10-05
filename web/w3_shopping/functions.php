@@ -5,7 +5,7 @@
     function addToCart(){
         array_push($_SESSION['cart'],$_GET[item]);
         for($i = 0 ; $i < count($_SESSION['cart']) ; $i++) {
-     echo '<td>'.$_SESSION['cart'][$i].'</td>';
+     echo "hello loop!";
      }
     }
 ?>
