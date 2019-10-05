@@ -17,8 +17,8 @@
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <button>Add to cart</button>
                 <p>Love Potion $42</p>
+                <button>Add to cart</button>
             </div>
         </div>
         <div class="item_2">
