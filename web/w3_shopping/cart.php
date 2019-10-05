@@ -1,10 +1,13 @@
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Miracle Cart</title>
-  <meta name="Description" content="Items In Cart">
-  <meta name="Victoria Mears" content="Items In Cart">
+    <title>Miracle Cart</title>
+    <meta name="Description" content="Items In Cart">
+    <meta name="Victoria Mears" content="Items In Cart">
+    
+    <link rel="stylesheet" type="text/css" href="shopping.css">
+    <script src="shopping.js"></script>
 
 </head>
     
