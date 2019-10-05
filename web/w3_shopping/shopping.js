@@ -5,7 +5,7 @@ function addToCart(btn){
     request.send();
 
     if (request.status === 200) {
-      alert(request.responseText);
+      //alert(request.responseText);
     }
 }
 

@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    $_SESSION['cart']=array("first item");
+    $_SESSION['cart']=array();
 ?>
 
 <html lang="en">
@@ -30,21 +30,21 @@
         <div class="item" id="item_2">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <button>Add to cart</button>
+                <button onClick="addToCart(this)">Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
         <div class="item" id="item_3">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <button>Add to cart</button>
+                <button onClick="addToCart(this)">Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
         <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <button>Add to cart</button>
+                <button onClick="addToCart(this)">Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
@@ -54,28 +54,28 @@
         <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <button>Add to cart</button>
+                <button onClick="addToCart(this)">Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
         <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <button>Add to cart</button>
+                <button onClick="addToCart(this)">Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
         <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <button>Add to cart</button>
+                <button onClick="addToCart(this)">Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
         <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <button>Add to cart</button>
+                <button onClick="addToCart(this)">Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
@@ -85,28 +85,28 @@
         <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <button>Add to cart</button>
+                <button onClick="addToCart(this)">Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
         <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <button>Add to cart</button>
+                <button onClick="addToCart(this)">Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
         <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <button>Add to cart</button>
+                <button onClick="addToCart(this)">Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
         <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <button>Add to cart</button>
+                <button onClick="addToCart(this)">Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
