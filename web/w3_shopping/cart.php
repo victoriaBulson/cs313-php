@@ -19,7 +19,7 @@
     <div id="cart"> Items In Your Cart: <br>
     <?php 
         foreach ($_SESSION['cart'] as $result){
-            echo $result."<br>\n";
+            echo "\t".$result."<br>\n";
         }
     ?>
     
