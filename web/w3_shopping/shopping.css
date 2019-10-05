@@ -8,6 +8,11 @@ header{
     margin-bottom: .5em;
 }
 
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
 body{
     background-color: darkgreen;
 }
@@ -26,3 +31,5 @@ body{
 
 .item{
 }
+
+
