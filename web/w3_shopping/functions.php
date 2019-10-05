@@ -4,8 +4,5 @@
 
     function addToCart(){
         array_push($_SESSION['cart'],$_GET[item]);
-        foreach ($_SESSION['cart'] as $result){
-            echo $result."<br>\n";
-        }
     }
 ?>

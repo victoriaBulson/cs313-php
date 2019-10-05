@@ -1,3 +1,4 @@
+<?php session_start();?>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -14,6 +15,15 @@
 <?php include 'header.php';?>
     
 <body id="cart_page" onload="loadCart()">
+    
+    <div id="cart"> Items In Your Cart: <br>
+    <?php 
+        foreach ($_SESSION['cart'] as $result){
+            echo $result."<br>\n";
+        }
+    ?>
+    
+    </div>
     
 </body>
     

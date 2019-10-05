@@ -10,17 +10,5 @@ function addToCart(btn){
 }
 
 function loadCart(){
-    var request = new XMLHttpRequest();
     
-    xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("cart_page").innerHTML =
-      this.responseText;
-    }
-  };
-
-    request.open('GET', 'browse.php', true),
-    request.send();
-    
-    document.write()
 }
