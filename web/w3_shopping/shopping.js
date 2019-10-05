@@ -1,10 +1,9 @@
 function addToCart(){
-    $.ajax({
-           type: "POST",
-           url: 'functions.php',
-           data:{action:'add_to_cart'},
-           success:function(html) {
-             alert(html);
-           }
-      });
+    var request = new XMLHttpRequest();
+    request.open('GET', 'functions.php', false);
+    request.send();
+
+    if (request.status === 200) {
+      alert(request.responseText);
+    }
 }
