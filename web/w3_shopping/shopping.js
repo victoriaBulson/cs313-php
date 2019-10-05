@@ -8,3 +8,10 @@ function addToCart(btn){
       alert(request.responseText);
     }
 }
+
+function loadCart(){
+    var request = new XMLHttpRequest();
+
+    request.open('GET', 'browse.php', true),
+    request.send();
+}

@@ -20,28 +20,28 @@
 <body id="browse_page" >
     
     <div class="browse_row">
-        <div class="item_1">
+        <div class="item" id="love_potion">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <button onClick="addToCart(this)" value="Love Potion">Add to cart</button>
+                <button onClick="addToCart(this)" value="Love_Potion">Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
-        <div class="item_2">
-            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
-            <div class="info">
-                <button>Add to cart</button>
-                <p>Love Potion $42</p>
-            </div>
-        </div>
-        <div class="item_3">
+        <div class="item" id="item_2">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
                 <button>Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
-        <div class="item_4">
+        <div class="item" id="item_3">
+            <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+            <div class="info">
+                <button>Add to cart</button>
+                <p>Love Potion $42</p>
+            </div>
+        </div>
+        <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
                 <button>Add to cart</button>
@@ -51,28 +51,28 @@
     </div>
         
     <div class="browse_row">
-        <div class="item">
+        <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
                 <button>Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
                 <button>Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
                 <button>Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
                 <button>Add to cart</button>
@@ -82,28 +82,28 @@
     </div>
     
     <div class="browse_row">
-        <div class="item">
+        <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
                 <button>Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
                 <button>Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
                 <button>Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
                 <button>Add to cart</button>
