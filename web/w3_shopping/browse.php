@@ -3,14 +3,6 @@
     $_SESSION['cart']=array();
 ?>
 
-<?php
-    if($_GET['button1']){addToCart();}
-
-    function addToCart(){
-        echo "ADDED TO CART";
-    }
-?>
-
 <html lang="en">
 <head>
     <meta charset="utf-8">
