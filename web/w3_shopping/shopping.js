@@ -1,3 +1,3 @@
-function addToCart(){
-    document.write("ADDED!");
+function addToCart(btn){
+    document.write(btn.value);
 }
