@@ -1,5 +1,5 @@
 <?php
-    echo "Hello world!";
+    echo $_GET[action];
     if($_GET['action'] == 'add_to_cart') {addToCart();}
 
     function addToCart(){
