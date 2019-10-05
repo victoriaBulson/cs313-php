@@ -2,13 +2,15 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Hello World</title>
-  <meta name="Description" content="Hello WOrld">
-  <meta name="Victoria Mears" content="Hello World">
+  <title>Miracle Cart</title>
+  <meta name="Description" content="Items In Cart">
+  <meta name="Victoria Mears" content="Items In Cart">
 
 </head>
-
+    
+<?php include 'header.php';?>
+    
 <body>
-  <h1 style="color:red; fontf-family:courier;">Hello World</h1>
 </body>
+    
 </html>
