@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" type="text/css" href="shopping.css">
     <script src="shopping.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
 <?php include 'header.php';?>
