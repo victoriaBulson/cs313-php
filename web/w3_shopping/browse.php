@@ -17,48 +17,92 @@
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <p>Love Potion $42</p>
                 <button>Add to cart</button>
+                <p>Love Potion $42</p>
             </div>
         </div>
         <div class="item_2">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+            <div class="info">
+                <button>Add to cart</button>
+                <p>Love Potion $42</p>
+            </div>
         </div>
         <div class="item_3">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+            <div class="info">
+                <button>Add to cart</button>
+                <p>Love Potion $42</p>
+            </div>
         </div>
         <div class="item_4">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+            <div class="info">
+                <button>Add to cart</button>
+                <p>Love Potion $42</p>
+            </div>
         </div>
     </div>
         
     <div class="browse_row">
         <div class="item">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+            <div class="info">
+                <button>Add to cart</button>
+                <p>Love Potion $42</p>
+            </div>
         </div>
         <div class="item">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+            <div class="info">
+                <button>Add to cart</button>
+                <p>Love Potion $42</p>
+            </div>
         </div>
         <div class="item">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+            <div class="info">
+                <button>Add to cart</button>
+                <p>Love Potion $42</p>
+            </div>
         </div>
         <div class="item">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+            <div class="info">
+                <button>Add to cart</button>
+                <p>Love Potion $42</p>
+            </div>
         </div>
     </div>
     
     <div class="browse_row">
         <div class="item">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+            <div class="info">
+                <button>Add to cart</button>
+                <p>Love Potion $42</p>
+            </div>
         </div>
         <div class="item">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+            <div class="info">
+                <button>Add to cart</button>
+                <p>Love Potion $42</p>
+            </div>
         </div>
         <div class="item">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+            <div class="info">
+                <button>Add to cart</button>
+                <p>Love Potion $42</p>
+            </div>
         </div>
         <div class="item">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
+            <div class="info">
+                <button>Add to cart</button>
+                <p>Love Potion $42</p>
+            </div>
         </div>
     </div>
     
