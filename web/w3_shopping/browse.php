@@ -1,6 +1,7 @@
 <?php 
     session_start();
     $_SESSION['cart']=array("first item");
+    echo $_SESSION['cart'][0];
 ?>
 
 <html lang="en">
