@@ -1,3 +1,8 @@
+<?php 
+    session_start();
+    $_SESSION['cart']=array();
+?>
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -7,6 +12,7 @@
     <meta name="Victoria Mears" content="Miracle Max Apothecary">
 
     <link rel="stylesheet" type="text/css" href="shopping.css">
+    <script src="shopping.js"></script>
 </head>
 
 <?php include 'header.php';?>
@@ -17,7 +23,7 @@
         <div class="item_1">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <button>Add to cart</button>
+                <button onclick="addToCart()" value="Love Potion">Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>
