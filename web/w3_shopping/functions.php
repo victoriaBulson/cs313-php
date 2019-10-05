@@ -1,8 +1,11 @@
 <?php
     echo "Hello world!";
-    if($_POST['action'] == 'add_to_cart') {addToCart();}
+    if($_GET['action'] == 'add_to_cart') {addToCart();}
 
     function addToCart(){
-        echo "ADDED TO CART";
+        array_push($_SESSION['cart'],$_GET[item]);
+        foreach ($_SESSION['cart'] as $result){
+            echo $result['id']."<br>\n";
+        }
     }
 ?>
