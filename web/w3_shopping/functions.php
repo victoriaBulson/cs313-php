@@ -1,5 +1,6 @@
 <?php
     session_start;
+    echo $_SESSION['cart'][0];
     if($_GET['action'] == 'add_to_cart') {addToCart();}
 
     function addToCart(){
