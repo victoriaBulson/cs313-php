@@ -12,7 +12,7 @@
 
 <?php include 'header.php';?>
 <body>
-    <form>
+    <form action="confirm.php" method="post">
         We deliver by horse and cart. Please Enter Your address.<br><br>
         Street Address: <input type="text" name="street_address"><br><br>
         City: <input type="text" name="city"><br><br>
