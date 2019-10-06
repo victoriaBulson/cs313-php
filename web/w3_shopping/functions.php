@@ -5,6 +5,7 @@
 
     function addToCart(){
         array_push($_SESSION['cart'],$_GET[item]);
+        echo "added!";
     }
 
     function removeItem(){
