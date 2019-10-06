@@ -29,10 +29,15 @@ body{
     justify-content: space-around;
 }
 
-.item{
+.cart_item{
+    width: 10em;
+    display: flex;
+    justify-content: space-around;
 }
 
 #cart{
     font-size:1.5em;
 }
+
+
 
