@@ -13,10 +13,16 @@
 
 <?php include 'header.php';?>
 <body>
+    Your Items:<br><br>
     <?php 
         foreach ($_SESSION['cart'] as $result){
-            echo "You have Purchased: <br>".$result."<br>\n";
+            echo $result."<br>\n";
         }
+    ?>
+    
+    Will be delivered to:
+    <?php
+        echo $_POST["street_address"]."<br>".$_POST["city"].", ".$_POST["state"]
     ?>
 </body>
     

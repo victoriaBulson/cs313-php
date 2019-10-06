@@ -18,7 +18,6 @@
         City: <input type="text" name="city"><br><br>
         State: <input type="text" name="state"><br><br>
         Zip Code: <input type="text" name="zip"><br><br>
-        country: <input type="text" name="country"><br><br>
         <input type="submit" value="Complete Purchase">
     </form>
     <a href="cart.php"><button>Back to Cart</button></a>
