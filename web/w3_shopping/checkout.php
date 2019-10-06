@@ -15,11 +15,12 @@
     <form>
         We deliver by horse and cart. Please Enter Your address.<br><br>
         Street Address: <input type="text" name="street_address"><br><br>
-        City: <input type="text" name="city">
+        City: <input type="text" name="city"><br><br>
         State: <input type="text" name="state"><br><br>
-        Zip Code: <input type="text" name="zip">
+        Zip Code: <input type="text" name="zip"><br><br>
         country: <input type="text" name="country"><br><br>
-        
+        <input type="submit" value="Complete Purchase">
+        <a href="cart.php"><button>Back to Cart</button></a>
     </form>
   
 </body>
