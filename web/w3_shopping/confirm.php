@@ -1,11 +1,13 @@
-<?php session_start();?>
+<?php
+    session_start();
+?>
 <html lang="en">
 <head>
     <meta charset="utf-8">
 
-    <title>Hello World</title>
-    <meta name="Description" content="Hello WOrld">
-    <meta name="Victoria Mears" content="Hello World">
+    <title>Miracle Confirmation</title>
+    <meta name="Description" content="Confirmation of Purchase">
+    <meta name="Victoria Mears" content="Confirmation of Purchase">
 
     <link rel="stylesheet" type="text/css" href="shopping.css">
     <script src="shopping.js"></script>
@@ -20,7 +22,7 @@
         }
     ?>
     
-    Will be delivered to:
+    <br><br>Will be delivered to:
     <?php
         echo $_POST["street_address"]."<br>".$_POST["city"].", ".$_POST["state"]
     ?>
