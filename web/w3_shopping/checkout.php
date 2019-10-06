@@ -20,8 +20,8 @@
         Zip Code: <input type="text" name="zip"><br><br>
         country: <input type="text" name="country"><br><br>
         <input type="submit" value="Complete Purchase">
-        <a href="cart.php"><button>Back to Cart</button></a>
     </form>
+    <a href="cart.php"><button>Back to Cart</button></a>
   
 </body>
 </html>
