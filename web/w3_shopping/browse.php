@@ -23,7 +23,7 @@
         <div class="item" id="love_potion">
             <img src="pics/love_potion.jpg" alt="Love Potion Image" class="browse_img">
             <div class="info">
-                <button onClick="addToCart(this)" value="Love_Potion">Add to cart</button>
+                <button onClick="addToCart(this)" value="Love Potion">Add to cart</button>
                 <p>Love Potion $42</p>
             </div>
         </div>

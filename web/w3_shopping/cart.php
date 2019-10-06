@@ -20,7 +20,7 @@
     <?php 
         foreach ($_SESSION['cart'] as $result){
             echo '<img src="pics/remove.png" alt="remove icon" style="width:50px; height:50px;"/>';
-            echo "Hello\t".$result."<br>\n";
+            echo "      ".$result."<br>\n";
         }
     ?>
     
