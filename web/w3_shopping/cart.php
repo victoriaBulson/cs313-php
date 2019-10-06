@@ -26,6 +26,7 @@
         }
     ?>
         <a href="browse.php"><button>Return To Shop</button></a>
+        <a href="checkout.php"><button>Purchase</button></a>
     
     </div>
     
