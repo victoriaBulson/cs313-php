@@ -19,9 +19,8 @@
     <div id="cart"> Items In Your Cart: <br><br>
     <?php 
         foreach ($_SESSION['cart'] as $result){
-            echo 
-                '<div class="cart_item" id="'.$result.'_div">
-                <img src="pics/remove.png" alt="remove icon" id="'.$result.'" style="width:50px; height:50px;" onclick="remove(this)"/>';
+            echo '<div class="cart_item" id="'.$result.'_div">
+                <img src="pics/remove.png" alt="remove icon" id="'.$result.'" style="width:50px; height:50px;"/>';
             echo "      ".$result."<br>\n</div>";
         }
     ?>
