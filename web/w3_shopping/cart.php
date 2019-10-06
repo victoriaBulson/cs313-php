@@ -25,6 +25,7 @@
             echo "      ".$result."<br>\n</div>";
         }
     ?>
+        <a href="browse.php"><button>Return To Shop</button></a>
     
     </div>
     
