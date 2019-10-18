@@ -10,7 +10,13 @@
     <script src="rotation.js"></script>
 </head>
 <?php include 'header.php';?>
-<body>
+<body onload="populateYear()">
+    <form>
+        <select id="year"></select>
+        <button type=submit>Get Rotation!</button>
+    </form>
+    
+    
   
 </body>
 </html>

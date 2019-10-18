@@ -25,3 +25,14 @@ function addIndiv(){
     indiv_div.innerHTML = form;
     document.getElementById('indiv_fields').appendChild(indiv_div);
 }
+
+function populateYear(){
+    var start = 2016;
+    var end = new Date().getFullYear();
+    end += 5;
+    var options = "";
+    for(var year = start ; year <=end; year++){
+        options += "<option>"+ year +"</option>";
+    }
+    document.getElementById("year").innerHTML = options;
+}
