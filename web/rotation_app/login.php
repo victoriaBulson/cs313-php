@@ -13,12 +13,14 @@
 <body>
     
     <img id="gift_icon" src="img/gift.svg" alt="Gift Icon Designed by Pixel perfect from www.flaticon.com">
-    <button onclick="window.location.href = 'rotation.php';" value="Sign Up"/>
+    <button onclick="window.location.href = 'rotation.php';">Sign Up</button>
+    
+    <hr>
     
     <form action="rotation.php" method="post">
         Username:<input type="text">
         Password:<input type="text">
-        <button type="submit" value="Log In"/>
+        <button type="submit">Log In</button>
     </form>
   
 </body>
