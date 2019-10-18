@@ -20,6 +20,6 @@ function addIndiv(){
     
     var form = 'Name:<input type="text" name="indiv' + num_indiv + '">';
     
-    couple_div.innerHTML = form;
+    indiv_div.innerHTML = form;
     document.getElementById('indiv_fields').appendChild(indiv_div);
 }
