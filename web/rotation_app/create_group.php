@@ -17,13 +17,13 @@
     Password:<input type="text">
     Group Name:<input type="text">
     Comment:<input type="text">
-    <div class="add_field" id="couple_fields">
-        <div id="couple_btn" onclick="addCouple()">
+    <div id="couple_fields">
+        <div class="add_field" id="couple_btn" onclick="addCouple()">
         <img style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com"/> Add Couple
         </div>
     </div>
-    <div class="add_field" id="indiv_fields">
-        <div id="indiv_btn" onclick="addIndiv()">
+    <div id="indiv_fields">
+        <div class="add_field" id="indiv_btn" onclick="addIndiv()">
         <img style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com"/> Add Individual
         </div>
     </div>
