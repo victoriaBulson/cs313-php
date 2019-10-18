@@ -23,7 +23,9 @@
         </div>
     </div>
     <div id="indiv_fields">
-        <input type="image" name="add_indiv_btn" style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com" onclick="addIndiv()"> Add Individual
+        <div id="indiv_btn" onclick="addIndiv()">
+        <img style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com"/> Add Individual
+        </div>
     </div>
     <button typ="submit">Create Group</button>
     </form>
