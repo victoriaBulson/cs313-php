@@ -12,13 +12,16 @@
 <?php include 'header.php';?>
 <body>
     
-        Username:<input type="text">
-        Password:<input type="text">
-        Group Name:<input type="text">
-        Comment:<input type="text">
-        <div id="couple_fields">
+    Username:<input type="text">
+    Password:<input type="text">
+    Group Name:<input type="text">
+    Comment:<input type="text">
+    <div id="couple_fields">
         <input type="image" name="add_couple_btn" style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com" onclick="addCouple()"> Add Couple
-        </div>
+    </div>
+    <div id="indiv_fields">
+        <input type="image" name="add_indiv_btn" style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com" onclick="add_indiv()"> Add Individual
+    </div>
         
     
 </body>
