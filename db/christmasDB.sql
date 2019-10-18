@@ -53,4 +53,4 @@ VALUES
     (5, (SELECT email FROM members WHERE email='lexie66allen@gmail.com'), (SELECT email FROM members WHERE email='victoriabulson@gmail.com'), 2019),
     (6, (SELECT email FROM members WHERE email='breweda1982@yahoo.com'), (SELECT email FROM members WHERE email='av8rdude@gmail.com'), 2019),
     (7, (SELECT email FROM members WHERE email='av8rdude@gmail.com'), (SELECT email FROM members WHERE email='geoff.bulson@gmail.com'), 2019),
-    (7, (SELECT email FROM members WHERE email='aaroncmears@gmail.com'), (SELECT email FROM members WHERE email='lexie66allen@gmail.com'), 2019)
+    (8, (SELECT email FROM members WHERE email='aaroncmears@gmail.com'), (SELECT email FROM members WHERE email='lexie66allen@gmail.com'), 2019);
