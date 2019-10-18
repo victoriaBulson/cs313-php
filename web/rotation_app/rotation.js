@@ -18,6 +18,7 @@ function addIndiv(){
     num_indiv++;
     
     var indiv_div = document.createElement('div');
+    indiv_div.setAttribute('class', 'new_field');
     
     var form = 'Name:<input type="text" name="indiv' + num_indiv + '">';
     
