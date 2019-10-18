@@ -16,8 +16,14 @@
         Password:<input type="text">
         Group Name:<input type="text">
         Comment:<input type="text">
-        <input type="image" name="add_couple_btn" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com" onclick="addCouple()">
+        <div id="couple_fields">
+        <input type="image" name="add_couple_btn" style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com" onclick="addCouple()"> Add Couple
+        </div>
         
     </form>
 </body>
 </html>
+
+
+Name 1:<input type="text" name="name1_couple">
+Name 2:<input type="text" name="name2_couple">

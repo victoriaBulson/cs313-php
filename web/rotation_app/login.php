@@ -13,7 +13,7 @@
 <body>
     
     <img id="gift_icon" src="img/gift.svg" alt="Gift Icon Designed by Pixel perfect from www.flaticon.com">
-    <button onclick="window.location.href = 'rotation.php';">Sign Up</button>
+    <button onclick="window.location.href = 'create_group.php';">Sign Up</button>
     
     <hr>
     
