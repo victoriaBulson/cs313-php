@@ -1,5 +1,5 @@
-num_couples = 0
-num_indiv = 0
+num_couples = 0;
+num_indiv = 0;
 
 function addCouple(){
     num_couples++;
