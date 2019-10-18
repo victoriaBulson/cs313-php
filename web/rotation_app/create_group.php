@@ -11,7 +11,7 @@
 </head>
 <?php include 'header.php';?>
 <body>
-    <form method="post">
+    
         Username:<input type="text">
         Password:<input type="text">
         Group Name:<input type="text">
@@ -20,7 +20,7 @@
         <input type="image" name="add_couple_btn" style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com" onclick="addCouple()"> Add Couple
         </div>
         
-    </form>
+    
 </body>
 </html>
 
