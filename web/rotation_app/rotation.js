@@ -5,6 +5,7 @@ function addCouple(){
     num_couples++;
     
     var couple_div = document.createElement('div');
+    couple_div.setAttribute('class', 'new_field');
     
     var form = 'Name 1:<input type="text" name="name1_couple' + num_couples + '">'
                 + 'Name 2:<input type="text" name="name2_couple' + num_couples + '">';
