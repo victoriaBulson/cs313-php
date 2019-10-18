@@ -19,7 +19,7 @@
     Comment:<input type="text">
     <div id="couple_fields">
         <div id="couple_btn" onclick="addCouple()">
-        <img type="image" style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com"> Add Couple
+        <img style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com"/> Add Couple
         </div>
     </div>
     <div id="indiv_fields">
