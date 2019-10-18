@@ -11,7 +11,7 @@
 </head>
 <?php include 'header.php';?>
 <body>
-    <form action="create_group.php" method="post">
+    <form method="post">
         Username:<input type="text">
         Password:<input type="text">
         Group Name:<input type="text">
