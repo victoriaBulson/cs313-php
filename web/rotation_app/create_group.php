@@ -11,6 +11,13 @@
 </head>
 <?php include 'header.php';?>
 <body>
-  
+    <form action="rotation.php" method="post">
+        Username:<input type="text">
+        Password:<input type="text">
+        Group Name:<input type="text">
+        Comment:<input type="text">
+        <input type="image" name="add_couple_btn" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com" onclick="addCouple()">
+        
+    </form>
 </body>
 </html>
