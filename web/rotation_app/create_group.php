@@ -20,7 +20,7 @@
         <input type="image" name="add_couple_btn" style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com" onclick="addCouple()"> Add Couple
     </div>
     <div id="indiv_fields">
-        <input type="image" name="add_indiv_btn" style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com" onclick="add_indiv()"> Add Individual
+        <input type="image" name="add_indiv_btn" style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com" onclick="addIndiv()"> Add Individual
     </div>
         
     
