@@ -14,6 +14,7 @@ function addCouple(){
 }
 
 function addIndiv(){
+    document.write("INDI!");
     num_indiv++;
     
     var indiv_div = document.createElement('div');
