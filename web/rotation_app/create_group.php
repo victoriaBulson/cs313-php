@@ -26,7 +26,3 @@
     
 </body>
 </html>
-
-
-Name 1:<input type="text" name="name1_couple">
-Name 2:<input type="text" name="name2_couple">
