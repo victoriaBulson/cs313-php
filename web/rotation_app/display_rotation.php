@@ -18,3 +18,6 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	echo "<p>$giver -> $reciever:<p>";
 }
 ?>
+
+
+    <?php include "display_rotation.php";?>
