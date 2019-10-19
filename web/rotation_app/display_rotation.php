@@ -12,8 +12,8 @@
 
     while ($row = $statement->fetch(PDO::FETCH_ASSOC))
     {
-        echo 'hello';
-
+       $name = $row['members.name'];
+        echo '<div>'. $name. '-----------'. $name. '<br>';
     }
 ?>
 
