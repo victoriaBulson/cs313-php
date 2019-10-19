@@ -9,3 +9,8 @@
 .new_field{
     margin-top: .5em;
 }
+
+.list{
+    display:flex;
+    justify-content: space-around;
+}
