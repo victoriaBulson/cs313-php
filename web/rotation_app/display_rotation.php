@@ -10,7 +10,7 @@
         INNER JOIN members ON combos.giver = members.email");
     $statement->execute();
 
-    echo '<div class="givers">'
+    echo '<div class="givers">';
     while ($row = $statement->fetch(PDO::FETCH_ASSOC))
     {
        $name = $row['name'];
