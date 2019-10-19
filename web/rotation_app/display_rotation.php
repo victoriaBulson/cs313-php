@@ -13,13 +13,7 @@
 </head>
 <?php include 'header.php';?>
 <body onload="populateYear()">
-    <form action="display_rotation.php" method="get">
-        <select id="year" name="year"></select>
-        <button type=submit>Get Rotation!</button>
-    </form>
-    
-    <?php include "display_rotation.php";?>
-  
+   
 </body>
 </html>
     
