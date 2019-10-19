@@ -14,4 +14,6 @@
     display:flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 25hw;
+    border: solid;
 }
