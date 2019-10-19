@@ -1,6 +1,8 @@
 
 <?php require "get_db.php";
-echo $_GET[username]?>
+session_start();
+$_SESSION["username"] = $_GET[username];
+echo ?>
 
 <html lang="en">
 <head>
@@ -15,7 +17,7 @@ echo $_GET[username]?>
 </head>
 <?php include 'header.php';?>
 <body onload="populateYear()">
-    <form action="rotation.php" method="get">
+    <form action="display_rotation.php" method="get">
         <select id="year" name="year"></select>
         <button type=submit>Get Rotation!</button>
     </form>
