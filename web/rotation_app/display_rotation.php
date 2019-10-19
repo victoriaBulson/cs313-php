@@ -1,14 +1,22 @@
 
 <?php
-    require "get_db.php";
-    echo "php wow";
+    echo "php";
     session_start();
 
-foreach ($db->query('SELECT username FROM accounts') as $row)
-{
-  echo $row['username'];
-  echo '<br/>';
-}
+    require "get_db.php";
 
+    $statement = $db->prepare
+        ("SELECT giver, reciever 
+        FROM combos
+        WHERE family =". $_GET[username]."
+        AND year = ".$_GET[year]);
+    $statement->execute();
+
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+    {
+       $giver = $row['giver'];
+	   $reciever = $row['reciever'];
+        echo "<p>$giver. -> $reciever:<p>";
+    }
 ?>
 
