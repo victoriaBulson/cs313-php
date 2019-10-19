@@ -1,6 +1,5 @@
 
 <?php 
-
 require "get_db.php";
 echo ?>
 
