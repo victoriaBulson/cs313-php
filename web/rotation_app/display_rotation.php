@@ -11,10 +11,8 @@
     $statement->execute();
 
     while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-{
-    $giver = $row['giver']
-	$reciever = $row['reciever'];
-	echo "<p>$giver -> $reciever:<p>";
-}
+    {
+
+    }
 ?>
 
