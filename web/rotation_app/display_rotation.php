@@ -3,12 +3,10 @@
     echo "php wow";
     session_start();
 
-    $statement = $db->prepare(SELECT * FROM accounts);
-    $statement->execute();
-
-    while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-    {
-        echo 'HEY!';
-    }
+foreach ($db->query('SELECT username FROM accounts') as $row)
+{
+  echo $row['username'];
+  echo '<br/>';
+}
 ?>
 
