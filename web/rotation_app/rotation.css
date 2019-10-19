@@ -5,8 +5,6 @@ header{
 }
 
 body{
-    display:flex;
-    justify-content: center;
 }
 .add_field{
     border: solid;
