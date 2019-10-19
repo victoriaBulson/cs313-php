@@ -11,8 +11,7 @@
     <link rel="stylesheet" type="text/css" href="rotation.css">
     <script src="rotation.js"></script>
 </head>
-<?php include 'header.php';?>
-<body onload="populateYear()">
+<body>
    
 </body>
 </html>
