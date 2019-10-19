@@ -17,7 +17,6 @@
     <div id="sign_up" onclick="window.location.href = 'create_group.php';">
         <button style="width:6em;">Sign Up</button>
     </div>
-    <hr>
     
     <form action="rotation.php" method="get">
         Username:<input type="text" name="username"><br>
