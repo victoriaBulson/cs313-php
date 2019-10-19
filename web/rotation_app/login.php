@@ -21,8 +21,8 @@
     <hr>
     
     <form action="rotation.php" method="get">
-        Username:<input type="text" name="username">
-        Password:<input type="text" name="password">
+        Username:<input type="text" name="username"><br>
+        Password:<input type="text" name="password"><br>
         <button type="submit">Log In</button>
     </form>
   

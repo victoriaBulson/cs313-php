@@ -28,4 +28,5 @@ header{
     margin:auto;
     display:flex;
     flex-direction: column;
+    width: 10vw;
 }
