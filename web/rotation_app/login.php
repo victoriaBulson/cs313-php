@@ -19,7 +19,7 @@
         Username<br><input type="text" name="username"><br>
         Password<br><input type="text" name="password"><br>
         <div style="display:flex;">
-        <button class="welcome_btn" type="submit">Log In</button>
+        <button class="welcome_btn" id="login" type="submit">Log In</button>
         <button class="welcome_btn" onclick="window.location.href = 'create_group.php' ">Sign Up</button>
         </div>
     </form>
