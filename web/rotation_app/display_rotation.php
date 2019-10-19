@@ -12,7 +12,7 @@
 
     while ($row = $statement->fetch(PDO::FETCH_ASSOC))
     {
-       $name = $row['members.name'];
+       $name = $row['name'];
         echo '<div>'. $name. '-----------'. $name. '<br>';
     }
 ?>
