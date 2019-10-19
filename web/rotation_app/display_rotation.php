@@ -15,7 +15,7 @@
     while ($row = $statement->fetch(PDO::FETCH_ASSOC))
     {
        $name = $row['name'];
-        echo $name. '<br>';
+        echo $name. '<br><br>';
     }
     echo '</div>';
 
@@ -29,7 +29,7 @@
     while ($row = $statement->fetch(PDO::FETCH_ASSOC))
     {
        $name = $row['name'];
-        echo $name. '<br>';
+        echo $name. '<br><br>';
     }
     echo '</div>';
     echo '</div>';
