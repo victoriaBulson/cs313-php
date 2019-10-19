@@ -12,7 +12,7 @@
 
     while ($row = $statement->fetch(PDO::FETCH_ASSOC))
     {
-        echo "HEY!";
+        echo 'HEY!';
 
     }
 ?>
