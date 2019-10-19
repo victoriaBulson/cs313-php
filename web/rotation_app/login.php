@@ -18,10 +18,11 @@
     <form action="rotation.php" method="get">
         Username<br><input type="text" name="username"><br>
         Password<br><input type="text" name="password"><br>
+        <div style="display:flex;">
         <button class="welcome_btn" type="submit">Log In</button>
+        <button class="welcome_btn" onclick="window.location.href = 'create_group.php' ">Sign Up</button>
+        </div>
     </form>
-  
-    <button class="welcome_btn" style="margin-left:60vw;" onclick="window.location.href = 'create_group.php' ">Sign Up</button>
     
 </body>
 </html>
