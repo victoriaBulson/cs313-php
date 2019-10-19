@@ -14,8 +14,8 @@
     while ($row = $statement->fetch(PDO::FETCH_ASSOC))
     {
        $name = $row['name'];
-        echo $name. <br>';
+        echo $name. '<br>';
     }
-    echo '</div>'
+    echo '</div>';
 ?>
 
