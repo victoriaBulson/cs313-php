@@ -16,7 +16,7 @@
     
     <div id="sign_up" onclick="window.location.href = 'create_group.php';">
         <img id="gift_icon" src="img/gift.svg" style="width:4em;" alt="Gift Icon Designed by Pixel perfect from www.flaticon.com">
-        <button style="width:3em;">Sign Up</button>
+        <button style="width:4.5em;">Sign Up</button>
     </div>
     <hr>
     
