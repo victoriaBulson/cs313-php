@@ -14,7 +14,7 @@
 <?php include 'header.php';?>
 <body>
     
-    <img id="gift_icon" src="img/gift.svg" alt="Gift Icon Designed by Pixel perfect from www.flaticon.com">
+    <img id="gift_icon" src="img/gift.svg" style="width:2em;" alt="Gift Icon Designed by Pixel perfect from www.flaticon.com">
     <button onclick="window.location.href = 'create_group.php';">Sign Up</button>
     
     <hr>
