@@ -25,6 +25,7 @@ header{
 }
 
 #sign_up{
+    margin:auto;
     display:flex;
     flex-direction: column;
 }
