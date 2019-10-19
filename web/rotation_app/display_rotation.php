@@ -6,7 +6,7 @@
     $statement = $db->prepare
         ("SELECT giver, reciever 
         FROM combos
-        WHERE family =". $_GET[username]."
+        WHERE family =". $_SESSION[username]."
         AND year = ".$_GET[year]);
     $statement->execute();
 
