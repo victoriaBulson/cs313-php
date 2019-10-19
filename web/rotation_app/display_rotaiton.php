@@ -1,9 +1,13 @@
 <?php
+    echo"IN PHP";
+    echo $_GET[username];
+    echo $_GET[year];
+    
     $statement = $db->prepare
         ("SELECT giver, reciever 
         FROM combos
-        WHERE family =". $_POST[username]."
-        AND year = ".$_POST[year]);
+        WHERE family =". $_GET[username]."
+        AND year = ".$_GET[year]);
 $statement->execute();
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
