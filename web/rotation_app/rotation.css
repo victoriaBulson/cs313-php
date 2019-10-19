@@ -42,5 +42,5 @@ input[type=text] {
   margin: auto;
   box-sizing: border-box;
   border: 2px solid red;
-  border-radius: 2em;
+  border-radius: 1em;
 }

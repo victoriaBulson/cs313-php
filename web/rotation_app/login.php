@@ -14,9 +14,6 @@
 <?php include 'header.php';?>
 <body>
     
-    <div id="sign_up" onclick="window.location.href = 'create_group.php';">
-        <button style="width:6em;">Sign Up</button>
-    </div>
     
     <form action="rotation.php" method="get">
         Username<br><input type="text" name="username"><br>
@@ -24,5 +21,7 @@
         <button type="submit">Log In</button>
     </form>
   
+    <button onclick="window.location.href = 'create_group.php' ">Sign Up</button>
+    
 </body>
 </html>
