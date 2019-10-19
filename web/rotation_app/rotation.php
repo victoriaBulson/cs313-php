@@ -2,7 +2,7 @@
 <?php 
 session_start();
 $_SESSION["username"] = $_GET[username];
-require "get_db.php";?>
+?>
 
 <html lang="en">
 <head>

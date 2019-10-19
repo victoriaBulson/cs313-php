@@ -1,5 +1,6 @@
 
 <?php
+    require "get_db.php";
     echo "php wow";
     session_start();
 
