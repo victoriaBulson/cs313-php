@@ -1,5 +1,5 @@
 <?php
-    echo"IN PHP";
+    echo "IN PHP";
     echo $_GET[username];
     echo $_GET[year];
     
