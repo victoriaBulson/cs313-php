@@ -14,7 +14,7 @@
 </head>
 <?php include 'header.php';?>
 <body onload="populateYear()">
-    <form action="rotation.php" method="post">
+    <form action="rotation.php" method="get">
         <select id="year" name="year"></select>
         <button type=submit>Get Rotation!</button>
     </form>
