@@ -8,5 +8,6 @@ foreach ($db->query('SELECT username FROM accounts') as $row)
   echo $row['username'];
   echo '<br/>';
 }
+
 ?>
 
