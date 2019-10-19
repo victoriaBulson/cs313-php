@@ -36,9 +36,8 @@ body{
 
 form{
     font-size: 4em;
-    margin:auto;
     justify-content: center;
-    margin-left: 40vw;
+    margin-left: 35vw;
 }
 
 input[type=text] {
