@@ -13,7 +13,7 @@
     {
        $giver = $row['giver'];
 	   $reciever = $row['reciever'];
-        echo '<div>'. $giver. '\t'. $reciever. '<br>';
+        echo '<div>'. $giver. '-----------'. $reciever. '<br>';
     }
 ?>
 
