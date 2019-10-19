@@ -38,7 +38,7 @@ form{
     font-size: 4em;
     margin:auto;
     justify-content: center;
-    margin-left: 25vw;
+    margin-left: 40vw;
 }
 
 input[type=text] {
@@ -58,5 +58,5 @@ input[type=text] {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-    margin:.25em;
+    margin:.5em;
 }
