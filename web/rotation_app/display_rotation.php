@@ -1,6 +1,6 @@
 
 <?php
-    echo "php";
+    echo "php wow";
     session_start();
 
     $statement = $db->prepare
