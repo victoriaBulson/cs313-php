@@ -7,9 +7,7 @@
     $statement = $db->prepare
         ("SELECT members.name, combos.giver
         FROM members
-        INNER JOIN members ON combos.giver = members.email
-        WHERE members.family = ". $_SESSION[username].
-        "AND combos.year = ". $_GET[year]);
+        INNER JOIN members ON combos.giver = members.email");
     $statement->execute();
 
     while ($row = $statement->fetch(PDO::FETCH_ASSOC))
