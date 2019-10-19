@@ -59,6 +59,8 @@ input[type=text] {
   font-size: .5em;
     margin:.5em;
     margin-top: 1em;
+}
+
+#login{
     margin-left: -.5em;
-    margin-right:.5em;
 }
