@@ -1,3 +1,6 @@
+
+<?php require "get_db.php";?>
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -11,12 +14,12 @@
 </head>
 <?php include 'header.php';?>
 <body onload="populateYear()">
-    <form>
-        <select id="year"></select>
+    <form action="rotation.php" method="post">
+        <select id="year" name="year"></select>
         <button type=submit>Get Rotation!</button>
     </form>
     
-    
+    <?php include "display_rotation.php";?>
   
 </body>
 </html>
