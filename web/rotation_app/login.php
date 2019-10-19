@@ -20,9 +20,9 @@
         Password<br><input type="text" name="password"><br>
         <div style="display:flex;">
         <button class="welcome_btn" id="login" type="submit">Log In</button>
-        <button class="welcome_btn" onclick="window.location.href = 'create_group.php' ">Sign Up</button>
         </div>
     </form>
+    <button class="welcome_btn" onclick="window.location.href = 'create_group.php' ">Sign Up</button>
     
 </body>
 </html>
