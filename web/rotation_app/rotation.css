@@ -3,6 +3,11 @@ header{
     text-align: center;
     font-size: 8em;
 }
+
+body{
+    display:flex;
+    justify-content: center;
+}
 .add_field{
     border: solid;
     border-radius: .25em;
