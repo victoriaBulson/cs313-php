@@ -38,6 +38,7 @@ form{
     font-size: 4em;
     margin:auto;
     justify-content: center;
+    margin-left: 20vw;
 }
 
 input[type=text] {
