@@ -1,5 +1,7 @@
 
 <?php
-    echo "IN PHP";
+    session_start()
+    echo $_SESSION[username];
+
 
 ?>
