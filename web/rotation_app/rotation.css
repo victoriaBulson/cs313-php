@@ -43,7 +43,6 @@ form{
 input[type=text] {
   width: 25%%;
   padding: 12px 20px;
-  margin-left: 3em;
   box-sizing: border-box;
   border: 2px solid red;
   border-radius: 1em;
