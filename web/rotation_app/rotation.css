@@ -5,6 +5,7 @@ header{
 }
 
 body{
+    display:flex;
 }
 .add_field{
     border: solid;
