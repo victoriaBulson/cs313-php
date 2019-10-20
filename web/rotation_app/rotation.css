@@ -39,6 +39,7 @@ body{
 form{
     font-size: 4em;
     justify-content: center;
+    margin-top: -1.5em;
     margin-left: 35vw;
 }
 
@@ -60,8 +61,4 @@ input[type=text] {
   font-size: .5em;
     margin:.5em;
     margin-top: 1em;
-}
-
-#sign_in{
-    margin-left: -.75em;
 }
