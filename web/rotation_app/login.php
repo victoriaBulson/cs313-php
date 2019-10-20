@@ -15,14 +15,14 @@
 <body>
     
     
-    <form action="rotation.php" method="get">
+    <form class="form" action="rotation.php" method="get">
         Username<br><input type="text" name="username"><br>
         Password<br><input type="text" name="password"><br>
         <div style="display:flex;">
         <button class="welcome_btn" id="login" type="submit">Log In</button>
         </div>
     </form>
-    <button class="welcome_btn" onclick="window.location.href = 'create_group.php' ">Sign Up</button>
+    <button class="welcome_btn form" onclick="window.location.href = 'create_group.php' ">Sign Up</button>
     
 </body>
 </html>
