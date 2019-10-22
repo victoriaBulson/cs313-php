@@ -24,7 +24,7 @@ catch (PDOException $ex)
 }
 
 
-echo '<form action='ta06b.php' method=post>';
+echo '<form action=/ta06b.php method=post>';
 echo 'ID: <input type=text name=id><br>';
 echo 'Book: <input type=text name=book><br>';
 echo 'Chapter: <input type=text name=chapter><br>';
