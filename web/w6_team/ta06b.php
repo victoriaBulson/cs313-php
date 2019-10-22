@@ -23,7 +23,6 @@ catch (PDOException $ex)
   die();
 }
 
-
 $insert_scripture = 'INSERT INTO scriptures (id, book, chapter, verse, content) VALUES($_POST[id] , $_POST[book], $_POST[chapter], 
 $_POST[verse], $_POST[content])';
 $stmt = $this->pdo->prepare($insert_scripture);
@@ -38,6 +37,5 @@ if(isset($_POST['topic'])) {
         }
     }
 }
-
 
 ?>
