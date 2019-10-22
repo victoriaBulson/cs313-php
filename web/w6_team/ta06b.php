@@ -33,7 +33,7 @@ if(isset($_POST['topic'])) {
     foreach($_POST['topic'] as $topic) {
     		if (isset($topic)) {
     			$topic_id = 'SELECT id FROM topic WHERE name=' . $topic;
-        	$insert_tg = 'INSERT INTO topicalguide (scripture_id) VALUES($_POST['id'])';
+        	$insert_tg = 'INSERT INTO topicalguide (scripture_id) VALUES($_POST['id']);
         	$stmt = $this->pdo->prepare($insert_tg);
         }
     }
