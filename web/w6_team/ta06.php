@@ -8,6 +8,7 @@ echo 'Content: <input type=textarea name=content><br>';
 
 foreach ($db->query('SELECT name FROM topic') as $row)
 {
+    echo 'HELLO';
 	$topic = $row[name];
   echo '<input type=checkbox name=topic[] value='. $topic .'>' . $topic .'<br>';
 }
