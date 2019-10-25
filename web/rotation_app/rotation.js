@@ -38,10 +38,9 @@ function populateYear(){
 }
 
 function saveAccount(){
-    document.write("HEY THERE!");
     var getInfo = "functions.php?&action=new_account";
     var request = new XMLHttpRequest();
-    request.open('POST', getInfo, false);
+    request.open('GET', getInfo, false);
     request.send();
 
     if (request.status === 200) {
