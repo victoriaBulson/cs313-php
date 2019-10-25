@@ -1,6 +1,5 @@
 <?php
-    session_start();
-        echo "HEY THERE!";
+    echo "HEY THERE!";
     if($_GET['action'] == 'new_account') {save_account();}
 
     function save_account(){
