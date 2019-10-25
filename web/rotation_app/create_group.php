@@ -15,9 +15,9 @@
 <body>
     
     <form action="rotation.php" method="post">
-    Username:<input type="text"><br>
-    Password:<input type="text"><br>
-    Group Name:<input type="text"><br>
+    Username:<input type="text" name="username"><br>
+    Password:<input type="text" name="password"><br>
+    Group Name:<input type="text" name="group_name"><br>
     Comment:<input type="text"><br>
     <div id="couple_fields">
         <div class="add_field" id="couple_btn" onclick="addCouple()">
