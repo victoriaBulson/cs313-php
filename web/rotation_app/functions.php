@@ -3,8 +3,8 @@
     if($_GET['action'] == 'new_account') {save_account();}
 
     function save_account(){
-        echo $_GET['action'];
-        echo $_POST['username'];
+        echo $_POST['action'];
+        //echo $_GET['username'];
         
     }
 ?>
