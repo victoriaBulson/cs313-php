@@ -3,7 +3,7 @@
     if($_GET['action'] == 'new_account') {save_account();}
 
     function save_account(){
-        
+        echo "HEY THERE!";
         echo $_GET['action'];
         echo $_POST[username];
         
