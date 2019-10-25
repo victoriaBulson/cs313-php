@@ -36,3 +36,14 @@ function populateYear(){
     }
     document.getElementById("year").innerHTML = options;
 }
+
+function saveAccount(){
+    var getInfo = "functions.php?&action=new_account";
+    var request = new XMLHttpRequest();
+    request.open('POST', getInfo, false);
+    request.send();
+
+    if (request.status === 200) {
+      //alert(request.responseText);
+    }
+}

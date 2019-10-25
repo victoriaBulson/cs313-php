@@ -14,7 +14,7 @@
 <?php include 'header.php';?>
 <body>
     
-    <form action="rotation.php" method="post">
+    <form method="post" onsubmit="saveAccount()">
     Username:<input type="text" name="username"><br>
     Password:<input type="text" name="password"><br>
     Group Name:<input type="text" name="group_name"><br>
