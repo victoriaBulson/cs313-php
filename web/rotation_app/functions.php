@@ -4,7 +4,7 @@
 
     function save_account(){
         echo $_GET['action'];
-        echo $_POST[username];
+        echo $_POST['username'];
         
     }
 ?>
