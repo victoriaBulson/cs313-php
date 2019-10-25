@@ -15,10 +15,10 @@
 <body>
     
     <form action="rotation.php" method="post">
-    Username:<input type="text">
-    Password:<input type="text">
-    Group Name:<input type="text">
-    Comment:<input type="text">
+    Username:<input type="text"><br>
+    Password:<input type="text"><br>
+    Group Name:<input type="text"><br>
+    Comment:<input type="text"><br>
     <div id="couple_fields">
         <div class="add_field" id="couple_btn" onclick="addCouple()">
         <img style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com"/> Add Couple
