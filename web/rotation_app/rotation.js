@@ -41,11 +41,11 @@ function saveAccount(){
     
     var username = document.getElementsByName("username");
     document.write(username);
-    var request = new XMLHttpRequest();
+    /*var request = new XMLHttpRequest();
     request.open('GET', "functions.php", false);
     request.send();
 
     if (request.status === 200) {
       alert(request.responseText);
-    }
+    }*/
 }
