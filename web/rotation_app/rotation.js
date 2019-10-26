@@ -39,14 +39,13 @@ function populateYear(){
 
 function saveAccount(){
     var postInfo = "username=" + $_POST[username];
-    document.write("HELLO" + $_POST[username])
-    document.write($_POST[username]);
-    var request = new XMLHttpRequest();
+    document.write("HELLO");
+    //var request = new XMLHttpRequest();
     //request.open('POST', "functions.php", false);
     //xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     //request.send(postInfo);
 
-    if (request.status === 200) {
-      alert(request.responseText);
-    }
+   // if (request.status === 200) {
+     // alert(request.responseText);
+    //}
 }
