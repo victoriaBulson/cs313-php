@@ -38,14 +38,12 @@ function populateYear(){
 }
 
 function saveAccount(){
-    //var postInfo = "username=" + $_POST[username];
-    document.write("HELLO");
-    //var request = new XMLHttpRequest();
-    //request.open('POST', "functions.php", false);
-    //xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    //request.send(postInfo);
+    var getInfo = "functions.php?&action=new_account";
+    var request = new XMLHttpRequest();
+    request.open('GET', getInfo, false);
+    request.send();
 
-   // if (request.status === 200) {
-     // alert(request.responseText);
-    //}
+    if (request.status === 200) {
+      alert(request.responseText);
+    }
 }
