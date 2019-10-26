@@ -39,6 +39,7 @@ function populateYear(){
 
 function saveAccount(){
     var postInfo = "username=" + $_POST[username];
+    document.write("HELLO" + $_POST[username])
     document.write($_POST[username]);
     var request = new XMLHttpRequest();
     request.open('POST', "functions.php", false);
