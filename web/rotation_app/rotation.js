@@ -42,12 +42,9 @@ function saveAccount(){
     document.write("HELLO" + $_POST[username])
     document.write($_POST[username]);
     var request = new XMLHttpRequest();
-    request.open('POST', "functions.php", false);
-    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    request.send(postInfo);
-    
-    //example
-    xhttp.send("fname=Henry&lname=Ford");
+    //request.open('POST', "functions.php", false);
+    //xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    //request.send(postInfo);
 
     if (request.status === 200) {
       alert(request.responseText);
