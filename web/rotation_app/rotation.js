@@ -40,7 +40,7 @@ function populateYear(){
 function saveAccount(){
     
     var username = document.getElementsByName("username");
-    document.write(username[0].value);
+    console.log(username[0].value);
     /*var request = new XMLHttpRequest();
     request.open('GET', "functions.php", false);
     request.send();
