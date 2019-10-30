@@ -18,7 +18,7 @@
     Username:<input type="text" name="username"><br>
     Password:<input type="text" name="password"><br>
     Group Name:<input type="text" name="group_name"><br>
-    Comment:<input type="text"><br>
+    Comment:<input type="text" name="comment"><br>
     <div id="couple_fields">
         <div class="add_field" id="couple_btn" onclick="addCouple()">
         <img style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com"/> Add Couple
