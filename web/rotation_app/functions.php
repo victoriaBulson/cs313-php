@@ -7,12 +7,5 @@
         echo $_POST['password'];
         echo $_POST['group_name'];
         echo $_POST['comment'];
-        echo $_
-            
-        foreach( $_POST as $array ) {
-                foreach( $array as $value ) {
-                    echo $value;
-                }
-        }
-    }
+
 ?>
