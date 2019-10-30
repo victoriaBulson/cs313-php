@@ -14,10 +14,10 @@
 <?php include 'header.php';?>
 <body>
     
-    <form method="post" onsubmit="saveAccount()">
-    Username:<input type="text" id="username"><br>
-    Password:<input type="text" id="password"><br>
-    Group Name:<input type="text" id="group_name"><br>
+    <form method="post" action="functions.php?func=new_account">
+    Username:<input type="text" name="username"><br>
+    Password:<input type="text" name="password"><br>
+    Group Name:<input type="text" name="group_name"><br>
     Comment:<input type="text"><br>
     <div id="couple_fields">
         <div class="add_field" id="couple_btn" onclick="addCouple()">
