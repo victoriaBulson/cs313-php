@@ -36,16 +36,3 @@ function populateYear(){
     }
     document.getElementById("year").innerHTML = options;
 }
-
-function saveAccount(){
-    
-    var username = document.getElementsByName("username");
-    console.log(username[0].value);
-    /*var request = new XMLHttpRequest();
-    request.open('GET', "functions.php", false);
-    request.send();
-
-    if (request.status === 200) {
-      alert(request.responseText);
-    }*/
-}
