@@ -1,5 +1,5 @@
 <?php
-    require 'get_db.php';
+    //require 'get_db.php';
     if($_GET['action'] == 'new_account') {save_account();}
 
     function save_account(){
