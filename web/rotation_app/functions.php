@@ -51,7 +51,7 @@
     while(array_key_exists($get_name, $_POST)){
         //Get Info
         $name = $_POST[$get_name];
-        $email = $_POST['email_indiv'. $couples];
+        $email = $_POST['email_indiv'. $indivs];
         //Insert members
         $query='INSERT INTO members(email, family, name) VALUES
                 (:email, :family, :name);';
