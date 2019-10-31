@@ -8,7 +8,7 @@
         $group_name = htmlspecialchars($_POST['group_name']);
         $comment = htmlspecialchars($_POST['comment']);
         
-        //$stmt=$db->prepare('SELECT username FROM accounts WHERE name="Bulson";');
+        $stmt=$db->prepare('SELECT username FROM accounts WHERE name="Bulson";');
         //$stmt->execute();
         //echo $stmt->fetchAll(PDO::FETCH_ASSOC);
         
