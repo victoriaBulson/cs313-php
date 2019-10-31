@@ -7,8 +7,8 @@ function addCouple(){
     var couple_div = document.createElement('div');
     couple_div.setAttribute('class', 'new_field');
     
-    var form = 'Name 1:<input type="text" name="name1_couple' + num_couples + '"><br>'
-                + 'Name 2:<input type="text" name="name2_couple' + num_couples + '"><br>';
+    var form = 'Name 1:<input type="text" name="couple_name1' + num_couples + '"><br>'
+                + 'Name 2:<input type="text" name="couple_name2' + num_couples + '"><br>';
     
     couple_div.innerHTML = form;
     document.getElementById('couple_fields').appendChild(couple_div);
