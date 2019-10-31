@@ -8,9 +8,9 @@
         $group_name = htmlspecialchars($_POST['group_name']);
         $comment = htmlspecialchars($_POST['comment']);
         
-        $stmt=$db->prepare('SELECT username FROM accounts WHERE name="Bulson";');
-        $stmt->execute();
-        echo $stmt->fetchAll(PDO::FETCH_ASSOC);
+        //$stmt=$db->prepare('SELECT username FROM accounts WHERE name="Bulson";');
+        //$stmt->execute();
+        //echo $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         
         /*$query='INSERT INTO accounts(username, password, name, comment)VALUES(:username, :password, :group_name, :comment);';
