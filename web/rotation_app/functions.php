@@ -39,7 +39,7 @@
         $stmt->bindvalue(':name2', $name_2, PDO::PARAM_STR);
         $stmt->execute();
         //Insert partners
-        $query='INSERT'
+        //$query='INSERT';
         
         $couples++;
         $get_name1 = 'name1_couple'. $couples;
