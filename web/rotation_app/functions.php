@@ -30,15 +30,21 @@
         //Insert members & partners
         $query='INSERT INTO members(email, family, name) VALUES
                 (:email1, :family, :name1),
-                (:email2, :family, :name2);
-                INSERT INTO partners(member1, member2)VALUES
-                (:email1, :email2);';
+                (:email2, :family, :name2);';
         $stmt=$db->prepare($query);
         $stmt->bindvalue(':email1', $email_1, PDO::PARAM_STR);
         $stmt->bindvalue(':email2', $email_2, PDO::PARAM_STR);
         $stmt->bindvalue(':family', $username, PDO::PARAM_STR);
         $stmt->bindvalue(':name1', $name_1, PDO::PARAM_STR);
         $stmt->bindvalue(':name2', $name_2, PDO::PARAM_STR);
+        $stmt->execute();
+        
+        
+        $query='INSERT INTO partners(member1, member2)VALUES
+                (:email1, :email2);';
+        $stmt=$db->prepare($query);
+        $stmt->bindvalue(':email1', $email_1, PDO::PARAM_STR);
+        $stmt->bindvalue(':email2', $email_2, PDO::PARAM_STR);
         $stmt->execute();
         
         $couples++;

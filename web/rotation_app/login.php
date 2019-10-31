@@ -22,7 +22,7 @@
         <button class="welcome_btn" type="submit">Log In</button>
         </div>
     </form>
-    <button class="welcome_btn" onclick="window.location.href = 'create_group.php' ">Sign Up</button>
+    <button class="welcome_btn" onclick="window.location.href = 'sign_up.php' ">Sign Up</button>
     
 </body>
 </html>
