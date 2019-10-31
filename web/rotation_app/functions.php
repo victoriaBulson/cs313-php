@@ -7,5 +7,6 @@
         echo $_POST['password'];
         echo $_POST['group_name'];
         echo $_POST['comment'];
+    }
 
 ?>
