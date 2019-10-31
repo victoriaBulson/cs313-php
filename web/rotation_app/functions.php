@@ -1,8 +1,9 @@
 <?php
-    require 'get_db.php';
+    require 'db_connect.php';
     if($_GET['action'] == 'new_account') {save_account();}
 
     function save_account(){
+        $db=get_db();
         $username = htmlspecialchars($_POST['username']);
         $password = htmlspecialchars($_POST['password']);
         $group_name = htmlspecialchars($_POST['group_name']);
