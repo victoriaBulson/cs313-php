@@ -8,7 +8,7 @@
         $group_name = htmlspecialchars($_POST['group_name']);
         $comment = htmlspecialchars($_POST['comment']);
         
-        $query="INSERT INTO accounts(username, password, name, comment)VALUES(:username, :password, :group_name, :comment)";
+        $query='INSERT INTO accounts(username, password, name, comment)VALUES(:username, :password, :group_name, :comment);';
         $stmt=$db->prepare($query);
         $stmt->bindvalue(':username', $username, PDO::PARAM_STR);
         $stmt->bindvalue(':password', $password, PDO::PARAM_STR);
