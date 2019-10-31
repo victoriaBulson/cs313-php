@@ -27,10 +27,12 @@
         $name_2 = $_POST['name2_couple'. $couples];
         $email_1 = $_POST['email1_couple'. $couples];
         $email_2 = $_POST['email2_couple'. $couples];
-        //Insert members
+        //Insert members & partners
         $query='INSERT INTO members(email, family, name) VALUES
                 (:email1, :family, :name1),
-                (:email2, :family, :name2);';
+                (:email2, :family, :name2);
+                INSERT INTO partners(member1, member2)VALUES
+                (:email1, :email2);';
         $stmt=$db->prepare($query);
         $stmt->bindvalue(':email1', $email_1, PDO::PARAM_STR);
         $stmt->bindvalue(':email2', $email_2, PDO::PARAM_STR);
@@ -38,8 +40,6 @@
         $stmt->bindvalue(':name1', $name_1, PDO::PARAM_STR);
         $stmt->bindvalue(':name2', $name_2, PDO::PARAM_STR);
         $stmt->execute();
-        //Insert partners
-        //$query='INSERT';
         
         $couples++;
         $get_name1 = 'name1_couple'. $couples;
