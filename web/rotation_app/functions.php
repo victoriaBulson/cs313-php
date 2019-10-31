@@ -11,7 +11,8 @@
         $group_name = htmlspecialchars($_POST['group_name']);
         $comment = htmlspecialchars($_POST['comment']);
         //Update Account Info;
-        $query='INSERT INTO accounts(username, password, name, comment)VALUES(:username, :password, :group_name, :comment);';
+        $query='INSERT INTO accounts(username, password, name, comment)
+                VALUES(:username, :password, :group_name, :comment);';
         $stmt=$db->prepare($query);
         $stmt->bindvalue(':username', $username, PDO::PARAM_STR);
         $stmt->bindvalue(':password', $password, PDO::PARAM_STR);
@@ -20,17 +21,20 @@
         $stmt->execute();
       */  
 
-        foreach($_POST as $key => $value)
-        {
-            if(strstr($key, 'couple'))
-            {
-                echo $value;
-            }
-            elseif(strstr($key, 'indiv')){
-                echo $value;
-            }
-        }
-
+        //Insert Couples
+        $couples = 1;
+        $name_1 = 'name1_couple'. $couples;
+        
+        while(array_key_exists($name_1, $_POST))
+            //Get Values
+            $email_1 = $_POST['email_1_couple'. $couples];
+            echo $email_1;
+            //Insert first member
+            /*$query='INSERT INTO members(email, family, name)
+                    VALUES (:email, :family, :name);'
+            $stmt=$db->prepare($query);*/
+            
+        
         
     }
 
