@@ -34,7 +34,7 @@
             echo $email_1;
             //Insert first member
             $query='INSERT INTO members(email, family, name) VALUES
-                    (:email1, :family, :name1).
+                    (:email1, :family, :name1),
                     (:email2, :family, :name2);'
             $stmt=$db->prepare($query);
             $stmt->bindvalue(':email1', $email_1, PDO::PARAM_STR);
