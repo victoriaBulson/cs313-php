@@ -22,9 +22,12 @@
 
         foreach($_POST as $key => $value)
         {
-            if (strstr($key, 'couple'))
+            if(strstr($key, 'couple'))
             {
-                echo $key;
+                echo $value;
+            }
+            elseif(strstr($key, 'indiv')){
+                echo $value;
             }
         }
 
