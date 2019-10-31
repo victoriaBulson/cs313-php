@@ -27,7 +27,7 @@
         
         while(array_key_exists($name_1, $_POST))
             //Get Values
-            $key_email_1 = 'email_1_couple'. $couples
+            $key_email_1 = 'email_1_couple'. $couples;
             $email_1 = $_POST[$key_email_1];
             echo $email_1;
             //Insert first member
