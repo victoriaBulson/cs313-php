@@ -25,7 +25,7 @@
         $couples = 1;
         $name_1 = 'name1_couple'. $couples;
         
-        while(array_key_exists($name_1, $_POST))
+        while(array_key_exists($name_1, $_POST)){
             //Get Values
             $key_email_1 = 'email_1_couple'. $couples;
             $email_1 = $_POST['$key_email_1'];
@@ -34,8 +34,8 @@
             /*$query='INSERT INTO members(email, family, name)
                     VALUES (:email, :family, :name);'
             $stmt=$db->prepare($query);*/
-            
-        
+            break 
+        }
         
     }
 
