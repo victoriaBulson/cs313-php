@@ -34,7 +34,7 @@
             /*$query='INSERT INTO members(email, family, name)
                     VALUES (:email, :family, :name);'
             $stmt=$db->prepare($query);*/
-            break 
+            break; 
         }
         
     }
