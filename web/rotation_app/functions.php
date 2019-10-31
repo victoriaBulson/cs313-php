@@ -39,6 +39,7 @@
         $stmt->bindvalue(':name2', $name_2, PDO::PARAM_STR);
         $stmt->execute();
         //Insert partners
+        $query='INSERT'
         
         $couples++;
         $get_name1 = 'name1_couple'. $couples;
@@ -49,7 +50,7 @@
     $get_name = 'name_indiv'. $indivs;
     while(array_key_exists($get_name, $_POST)){
         //Get Info
-        $name = $_POST[$get_name1];
+        $name = $_POST[$get_name];
         $email = $_POST['email_indiv'. $couples];
         //Insert members
         $query='INSERT INTO members(email, family, name) VALUES
