@@ -6,7 +6,7 @@
     $db=get_db();
     $username = htmlspecialchars($_POST['username']);
     $password = htmlspecialchars($_POST['password']);
-    $password = password_hash($password, PASSSWORD_DEFAULT);
+    $password = password_hash($password, PASSWORD_DEFAULT);
     $group_name = htmlspecialchars($_POST['group_name']);
     $SESSION['group_name'] = $group_name;
     $comment = htmlspecialchars($_POST['comment']);
