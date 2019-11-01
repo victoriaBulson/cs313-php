@@ -1,7 +1,9 @@
 <?php
     session_start();
-    if ($_SESSION['invalidLogin'] == TRUE){
-        echo 'Invalid username or password. Please Try Again'
+    if (isset($_SESSION['invalidLogin'])){
+        if ($_SESSION['invalidLogin'] == TRUE){
+            echo 'Invalid username or password. Please Try Again'
+        }
     }
 ?>
 <html lang="en">
