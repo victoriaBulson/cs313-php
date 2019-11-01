@@ -16,7 +16,7 @@ if (empty($saved_password)){
     echo 'EMPTY';
 } else{
     echo '! EMPTY';
-    echo $saved_password[0];
+    echo $saved_password[0][0];
 }
 
 
