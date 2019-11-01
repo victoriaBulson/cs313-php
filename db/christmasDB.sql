@@ -1,6 +1,8 @@
-CREATE TABLE accounts(                                                          username      VARCHAR(20) PRIMARY KEY,                                         password      VARCHAR(20) NOT NULL,
+CREATE TABLE accounts(                                              username      VARCHAR(20) PRIMARY KEY,                             password      VARCHAR(20) NOT NULL,
 name          VARCHAR(20) NOT NULL,                                           comment       TEXT        NOT NULL
 );
+ALTER TABLE accounts 
+ADD COLUMN password VARCHAR(200);
 
 CREATE TABLE members(
 email         TEXT        PRIMARY KEY,

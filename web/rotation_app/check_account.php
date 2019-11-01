@@ -15,7 +15,7 @@ $stmt->execute();
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $stored_hash = $rows[0]["password"];
 
-if(password_verify($password, $stored_hash){
+if(password_verify($password, $stored_hash)){
     $new_url='rotation.php';
 } else{
     $new_url='login.php';
