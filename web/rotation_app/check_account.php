@@ -11,7 +11,7 @@ $stmt=$db->prepare($query);
 $stmt->bindvalue(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
 $saved_password = $stmt->fetchAll(PDO::FETCH_ASSOC);
-echo $saved_password[0];
+echo $saved_password[0][0];
 
 
 
