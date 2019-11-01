@@ -14,7 +14,7 @@
 <?php include 'header.php';?>
 <body>
     
-    <form class="centered_stuff" action="rotation.php" method="get">
+    <form class="centered_stuff" action="check_account.php" method="get">
         Username<br><input type="text" name="username"><br>
         Password<br><input type="text" name="password"><br>
         <div style="display:flex;">
