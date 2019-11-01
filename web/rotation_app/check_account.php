@@ -8,7 +8,7 @@ $password = htmlspecialchars($_POST['password']);
 
 $query='SELECT * FROM accounts;';
 $stmt=$db->prepare($query);
-$stmt->bindvalue(':username', $username, PDO::PARAM_STR);
+//$stmt->bindvalue(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
 $saved_password = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
