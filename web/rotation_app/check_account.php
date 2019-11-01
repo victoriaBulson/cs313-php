@@ -16,7 +16,12 @@ if (empty($saved_password)){
     echo 'EMPTY';
 } else{
     echo '! EMPTY';
-    echo $saved_password[0][0];
+    foreach ($saved_password as $row => $value)
+        echo $row;
+        echo $row[0];
+        echo $value;
+        echo $value[0];
+
 }
 
 
