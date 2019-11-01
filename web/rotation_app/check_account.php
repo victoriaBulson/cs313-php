@@ -12,7 +12,14 @@ $stmt=$db->prepare($query);
 $stmt->execute();
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-echo $rows[0][0][0];
+if (empty($saved_password)){
+    echo 'EMPTY';
+} else{
+    echo '! EMPTY';
+    echo rows[0]['username'];
+}
+
+
 
 
 ?>
