@@ -16,7 +16,7 @@ if (empty($rows)){
     echo 'EMPTY';
 } else{
     echo '! EMPTY';
-    echo rows[0]['username'];
+    echo rows[1]['username'];
 }
 
 
