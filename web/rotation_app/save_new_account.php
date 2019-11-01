@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require 'db_connect.php';
 
     //Get Account Info
@@ -6,6 +7,7 @@
     $username = htmlspecialchars($_POST['username']);
     $password = htmlspecialchars($_POST['password']);
     $group_name = htmlspecialchars($_POST['group_name']);
+    $SESSION['group_name'] = $group_name;
     $comment = htmlspecialchars($_POST['comment']);
     //Update Account Info;
     $query='INSERT INTO accounts(username, password, name, comment)
@@ -69,6 +71,9 @@
             
         $indivs++;
         $get_name = 'name_indiv'. $indivs;
+        
+    $new_page='rotation.php';
+    header("Location:$new_page");
     }
 
 ?>

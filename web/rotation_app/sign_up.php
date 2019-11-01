@@ -14,7 +14,7 @@
 <?php include 'header.php';?>
 <body>
     
-    <form method="post" action="functions.php?action=new_account">
+    <form method="post" action="save_new_account.php?action=new_account">
     Username:<input type="text" name="username"><br>
     Password:<input type="text" name="password"><br>
     Group Name:<input type="text" name="group_name"><br>
