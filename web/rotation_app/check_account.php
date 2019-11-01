@@ -6,9 +6,9 @@ $db=get_db();
 $username = htmlspecialchars($_POST['username']);
 $password = htmlspecialchars($_POST['password']);
 
-$query='SELECT password FROM accounts;';
+$query='SELECT password FROM accounts WHERE username=:username;';
 $stmt=$db->prepare($query);
-//$stmt->bindvalue(':username', $username, PDO::PARAM_STR);
+$stmt->bindvalue(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -16,7 +16,7 @@ if (empty($rows)){
     echo 'EMPTY';
 } else{
     echo '! EMPTY';
-    echo $rows[2]["password"];
+    echo $rows[0]["password"];
 }
 
 
