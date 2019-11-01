@@ -12,7 +12,7 @@ $stmt=$db->prepare($query);
 $stmt->execute();
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-if (empty($saved_password)){
+if (empty($rows)){
     echo 'EMPTY';
 } else{
     echo '! EMPTY';
