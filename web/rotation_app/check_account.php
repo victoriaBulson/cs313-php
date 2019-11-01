@@ -12,7 +12,7 @@ $stmt=$db->prepare($query);
 $stmt->execute();
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-echo $rows[0][0];
+echo $rows[0][0][0];
 
 
 ?>
