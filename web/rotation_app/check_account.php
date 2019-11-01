@@ -10,9 +10,11 @@ $query='SELECT password FROM accounts WHERE username=:username;';
 $stmt=$db->prepare($query);
 $stmt->bindvalue(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
-$saved_password = fetchAll(PDO:FETCH_ASSOC);
+$saved_password = $stmt->fetchAll(PDO:FETCH_ASSOC);
 echo $saved_password;
 echo $saved_password[0];
+$saved_password;
+
 
 
 
