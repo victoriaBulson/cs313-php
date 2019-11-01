@@ -10,9 +10,13 @@ $query='SELECT * FROM accounts WHERE username=:username;';
 $stmt=$db->prepare($query);
 $stmt->bindvalue(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
-$saved_password = $stmt->fetchone();
-echo $saved_password[0];
+$saved_password = $stmt->fetchone(PDO::FETCH_ASSOC);
 
+if (empty($saved_password)){
+    echo 'EMPTY';
+} else{
+    echo '! EMPTY';
+}
 
 
 
