@@ -18,7 +18,7 @@ $stored_hash = $rows[0]["password"];
 if(password_verify($password, $stored_hash){
     $new_url='rotation.php';
 } else{
-    $new_url='login.php'
+    $new_url='login.php';
 }
 
 header("Location:$new_url");
