@@ -14,6 +14,7 @@
     }
     
     foreach ($rows as $row){
+        echo '! Empty';
         echo $row['giver'];
     }
     statement
