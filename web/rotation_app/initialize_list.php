@@ -13,7 +13,7 @@
         $partners = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         echo $partners[0]['member1']. '<br>', $partners[0]['member2'];
-        $slots[$counter] = array($partners[0]['member1'], $partners[0]['member2'])
+        //$slots[$counter] = array($partners[0]['member1'], $partners[0]['member2']);
     }
     
 ?>
