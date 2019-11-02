@@ -26,7 +26,7 @@
 
     foreach ($giver_rows as $giver_row){
         //get recievers name
-        $reciever = $row['reciever'];
+        $reciever = $giver_row['reciever'];
         $query='SELECT m.name FROM combos c JOIN members m
                 ON c.reciever=m.email
                 WHERE m.email=:reciever;';
