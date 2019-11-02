@@ -37,7 +37,7 @@
 
     //populate intial list randomly
     $initial_list=[];
-    $used_slots[];
+    $used_slots = [];
     $num_slots = sizeof($slots);
     while(sizeof($initial_list < $num_members)){
         $next_slot= rand(0, $num_slots);
