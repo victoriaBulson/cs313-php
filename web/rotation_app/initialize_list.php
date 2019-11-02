@@ -45,8 +45,4 @@
         }
     }
     
-    foreach($initial_list as $member){
-        echo $member. '<br>';
-    }
-    
 ?>

@@ -38,17 +38,25 @@
         //variables for program logic
         $num_members = sizeof($members);
         $rotation_life = $num_members - 2;
+        $years_used = 0;
         
         //check for initialized_list
         if(!empty($initialized_years)){
+            //TODO: check for most recent initialized year
             $year_initialized = $initialized_years[0];
             $years_used = $year - $year_initialized;
-            //check for rotation life
-            if($years_used = $rotation_life)
-                include 'initialize_list.php';
-        } else{
+        //Initialize new list
+        if(empty($initialized_years) || years_used = $rotation_life){
             include 'initialize_list.php';
-            
+            $query='INSERT INTO initialized_lists
+                    (initial_list, year_initialized, family)
+                    VALUES
+                    (:initial_list, :year, :family);';
+            $stmt=$db->prepare($query);
+            $stmt->bindvalue(':initial_list', $initial_list, PDO::PARAM_STR);
+            $stmt->bindvalue(':year', $year, PDO::PARAM_STR);
+            $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
+            $stmt->execute();
         }
         
         
