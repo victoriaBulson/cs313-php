@@ -20,10 +20,17 @@
     $giver_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
     if(empty($giver_rows)){
-        //Calculate new combos.
-        echo 'empty';
+        //get number of members in family
+        $query='SELECT email FROM members
+                WHERE email=:family;';
+        $stmt=$db->prepare($query);
+        $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
+        $stmt->execute();
+        $members = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $num_members = sizeof($members);
+        echo $num_members;
     }
-
+    /*
     foreach ($giver_rows as $giver_row){
         //get recievers name
         $reciever = $giver_row['reciever'];
@@ -38,6 +45,7 @@
         //display combo
         echo $giver_row['name']. '......'. $reciever_row[0]['name']. '<br>';
     }
+    /*
 
 
 ?>
