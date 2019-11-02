@@ -2,7 +2,7 @@
     session_start();
     if (isset($_SESSION['unique_username'])){
         if ($_SESSION['invalidLogin'] == FALSE){
-            echo 'This username is already in use. Please try again.';
+            echo 'This username is already in use. Please ';
         }
     }
 ?>
@@ -21,7 +21,6 @@
 </head>
 <?php include 'header.php';?>
 <body>
-    
     <form method="post" action="save_new_account.php?action=new_account">
     Username:<input type="text" name="username"><br>
     Password:<input type="text" name="password"><br>

@@ -1,7 +1,16 @@
 
 <?php 
-session_start();
-$_SESSION["username"] = $_GET[username];
+    //get family name
+    session_start();
+    require 'db_connect.php';
+    $db=get_db();
+    $query='SELECT name FROM accounts WHERE username=:username;';
+    $stmt=$db->prepare($query);
+    $stmt->bindvalue(':username', $_SESSION['username'], PDO::PARAM_STR);
+    $stmt->execute();
+    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $family_name = $rows[0]['name'];
+    
 ?>
 
 <html lang="en">
@@ -19,6 +28,7 @@ $_SESSION["username"] = $_GET[username];
 </head>
 <?php include 'header.php';?>
 <body onload="populateYear()">
+    <?php echo '<h1>'. $family_name .'</h1>'?>
     <form action="display_rotation.php" method="get">
         <select id="year" name="year"></select>
         <button type=submit>Get Rotation!</button>
