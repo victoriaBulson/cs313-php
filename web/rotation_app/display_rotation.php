@@ -45,6 +45,7 @@
             //TODO: check for most recent initialized year
             $year_initialized = $initialized_years[0];
             $years_used = $year - $year_initialized;
+        }
         //Initialize new list
         if(empty($initialized_years) || years_used == $rotation_life){
             include 'initialize_list.php';
