@@ -8,8 +8,20 @@
     $password = htmlspecialchars($_POST['password']);
     $password = password_hash($password, PASSWORD_DEFAULT);
     $group_name = htmlspecialchars($_POST['group_name']);
-    $SESSION['group_name'] = $group_name;
+    $SESSION['username'] = $username;
     $comment = htmlspecialchars($_POST['comment']);
+
+    //Check for unique username
+    $query='SELECT username FROM accounts WHERE username=:username';
+    $stmt=$db->prepare($query);
+    $stmt->bindvalue(':username', $username, PDO::PARAM_STR);
+    $stmt->execute();
+    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    if (!empty($rows)){
+        $_SESSION['unique_username'] = FALSE;
+        header("location:sign_up.php");
+    }
+
     //Update Account Info;
     $query='INSERT INTO accounts(username, password, name, comment)
             VALUES(:username, :password, :group_name, :comment);';
