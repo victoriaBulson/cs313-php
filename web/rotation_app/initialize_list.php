@@ -3,8 +3,10 @@
     $skip = [];
     $slots = [];
     $counter = 0;
+
+    echo $members[0]['email'];
     
-    foreach( $members as $member){
+    foreach($members as $member){
         $query='SELECT member1, member2 FROM partners
                 WHERE member1=:member AND member2=:member;';
         $stmt=$db->prepare($query);
