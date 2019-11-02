@@ -37,14 +37,13 @@
 
     //populate intial list randomly
     $initial_list=[];
-    $used_slots = [];
-    $num_slots = sizeof($slots);
     while(sizeof($initial_list) < $num_members){
-        $next_slot= rand(0, $num_slots);
-        if(!in_array($next_slot, $used_slots)){
+        //push items in slot into intial_list
+        $next_slot= rand(0, sizeof($slots));
+        foreach($slots[$slots[$next_slot]] as $member){
             array_push($initial_list, $member);
-            array_push($used_slots, $next_slot);
         }
+        unset($slots[$next_slot]);
     }
     
     foreach($initial_list as $member){
