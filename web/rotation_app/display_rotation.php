@@ -49,7 +49,7 @@
         //Initialize new list
         if(empty($initialized_years) || years_used == $rotation_life){
             include 'initialize_list.php';
-            $query='INSERT INTO initialized_lists
+            $query='INSERT INTO initial_lists
                     (initial_list, year_initialized, family)
                     VALUES
                     (:initial_list, :year, :family);';
