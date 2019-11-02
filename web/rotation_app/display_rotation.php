@@ -69,8 +69,7 @@
                 $q_up->bindParam(":arr", $elem);
                 $q_up->execute();
             }
-        
-        
+        }
     }
     /*
     foreach ($giver_rows as $giver_row){
