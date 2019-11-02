@@ -1,5 +1,6 @@
 
 <?php
+    echo 'FIRST!';
     //Get combos from year
     $year = $_GET['year'];
     $query='SELECT giver, reciever FROM combos WHERE year=:year;';
@@ -12,7 +13,7 @@
         //Calculate new combos.
         echo 'empty';
     }
-    echo "HERE!";
+    echo 'HERE!';
     foreach ($rows as $row){
         echo '! Empty';
         echo $row['giver'];
