@@ -37,9 +37,10 @@
 
     //populate intial list randomly
     $initial_list=[];
+    echo sizeof($slots);
     while(sizeof($initial_list) < $num_members){
         //push items in slot into intial_list
-        $next_slot= rand(0, (sizeof($slots) -1));
+        $next_slot= rand(0, (sizeof($slots)));
         echo '<br>Next slot: '. $next_slot;
         echo '<br>Max: '. sizeof($slots)-1;
         #foreach($slots[$next_slot] as $member){
