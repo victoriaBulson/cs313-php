@@ -24,14 +24,14 @@
         echo 'num_members: ';
         //get number of members in family
         $query='SELECT email FROM members
-                WHERE email=:family;';
+                WHERE family=:family;';
         $stmt=$db->prepare($query);
         $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
         $stmt->execute();
         $members = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $num_members = sizeof($members);
         echo $num_members. '<br>';
-        echo $members[0]['email'];
+        echo $members['email'];
     }
     /*
     foreach ($giver_rows as $giver_row){
