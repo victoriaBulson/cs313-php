@@ -21,17 +21,30 @@
     echo 'check giver_rows: <br>';
 
     if(empty($giver_rows)){
-        echo 'num_members: ';
-        //get number of members in family
+        //query number of family members
         $query='SELECT email FROM members
                 WHERE family=:family;';
         $stmt=$db->prepare($query);
         $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
         $stmt->execute();
         $members = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        //query year initialized
+        $query='SELECT year_initialized FROM initialized_lists
+                WHERE family=:family;';
+        $stmt=$db->prepare($query);
+        $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
+        $stmt->execute();
+        $initialized_years = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        
+        if(empty($initialized_years)){
+            echo "Initialize list";
+        }
+        
         $num_members = sizeof($members);
-        echo $num_members. '<br>';
-        echo $members['email'];
+        $rotation_life = $num_members - 2;
+        
+        
+        
     }
     /*
     foreach ($giver_rows as $giver_row){
