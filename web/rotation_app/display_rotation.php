@@ -6,8 +6,7 @@
 
     $family = $_SESSION['username'];
     $year = $_GET['year'];
-    echo $family;
-    
+
     //get givers name
     $query='SELECT c.reciever, m.name
             FROM combos c JOIN members m;
@@ -19,6 +18,8 @@
     $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
     $stmt->execute();
     $giver_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+    echo 'queried';
 
     if(empty($rows)){
         //Calculate new combos.
@@ -27,7 +28,7 @@
 
     foreach ($giver_rows as $row){
         //get recievers name
-        echo $row['name'];
+        echo $row['reciever'];
 
     }
 
