@@ -43,7 +43,7 @@
         $max = sizeof($slots) - 1;
         if($max > 0){
             #$next_slot= rand(0, $max);
-            $count = 0
+            $count = 0;
             error_log($next_slot);
             foreach($slots[$count] as $member){
                 error_log('FOR EACH!');
