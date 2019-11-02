@@ -1,5 +1,9 @@
 
 <?php
+    session_start();
+    require 'db_connect.php';
+    $db=get_db();
+
     echo 'FIRST!<br>';
     //Get combos from year
     $year = $_GET['year'];
