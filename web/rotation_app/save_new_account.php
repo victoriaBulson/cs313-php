@@ -84,9 +84,8 @@
             
         $indivs++;
         $get_name = 'name_indiv'. $indivs;
-        
+    }
     $new_page='rotation.php';
     header("Location:$new_page");
-    }
 
 ?>
