@@ -41,7 +41,7 @@
     
     foreach($slots as $slot){
         foreach($slot as $member){
-            echo $member. '<br>'
+            echo $member. '<br>';
         }
     }
     
