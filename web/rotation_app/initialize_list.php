@@ -48,7 +48,7 @@
             foreach($slots[$count] as $member){
                 error_log('FOR EACH!');
                 array_push($initial_list, $member);
-                $count++
+                $count++;
             }
             unset($slots[$next_slot]);
         }else{
