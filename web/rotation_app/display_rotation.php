@@ -28,7 +28,7 @@
         $stmt->execute();
         $members = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $num_members = sizeof($members);
-        echo $num_members;
+        echo $members[0]['email'];
     }
     /*
     foreach ($giver_rows as $giver_row){
