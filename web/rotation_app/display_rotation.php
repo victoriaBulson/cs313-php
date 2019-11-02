@@ -38,7 +38,7 @@
         $reciever_row = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         //display combo
-        echo $giver_row['name']. '......', $reciever_row['name']. '<br>';
+        echo $giver_row['name']. '......', $reciever_row[0]['name']. '<br>';
     }
 
 
