@@ -39,7 +39,7 @@
     $initial_list=[];
     $used_slots = [];
     $num_slots = sizeof($slots);
-    while(sizeof($initial_list < $num_members)){
+    while(sizeof($initial_list) < $num_members)){
         $next_slot= rand(0, $num_slots);
         if(!in_array($next_slot, $used_slots)){
             array_push($initial_list, $member);
