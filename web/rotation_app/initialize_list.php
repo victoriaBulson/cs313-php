@@ -37,19 +37,16 @@
 
     //populate intial list randomly
     $initial_list=[];
-    echo sizeof($slots);
-
-    while(!empty($slots)){
-        //push items in slot into intial_list
-        $max = sizeof($slots) - 1;
-        $next_slot= rand(0, $max);
-        
-        array_push($initial_list, $slots[$next_slot][0]);
-        unset($slots[$next_slot]);
+    shuffle($slots);
+    
+    foreach($slots as $slot){
+        foreach($slot as $member){
+            echo $member. '<br>'
+        }
     }
     
-    foreach($initial_list as $member){
-        echo $member. '<br>';
-    }
+    #foreach($initial_list as $member){
+     #   echo $member. '<br>';
+    #}
     
 ?>
