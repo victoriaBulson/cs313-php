@@ -1,8 +1,6 @@
-CREATE TABLE accounts(                                              username      VARCHAR(20) PRIMARY KEY,                             password      VARCHAR(20) NOT NULL,
-name          VARCHAR(20) NOT NULL,                                           comment       TEXT        NOT NULL
+CREATE TABLE accounts(                                          username      VARCHAR(20) PRIMARY KEY,                         password      VARCHAR(200) NOT NULL,
+name          VARCHAR(20) NOT NULL,                             comment       TEXT        NOT NULL
 );
-ALTER TABLE accounts 
-ADD COLUMN password VARCHAR(200);
 
 CREATE TABLE members(
 email         TEXT        PRIMARY KEY,
@@ -21,6 +19,13 @@ combo_id      SERIAL      PRIMARY KEY,
 giver         TEXT        NOT NULL REFERENCES members(email),
 reciever      TEXT        NOT NULL REFERENCES members(email),
 year          INT         NOT NULL         
+);
+
+CREATE TABLE initialized_lists(
+list_id          SERIAL PRIMARY KEY,
+family           TEXT   NOT NULL REFERENCES accounts(username),
+initial_list     INT[]  NOT NULL,
+year_initialized INT    NOT NULL
 );
 
 
@@ -56,3 +61,48 @@ VALUES
     (6, (SELECT email FROM members WHERE email='breweda1982@yahoo.com'), (SELECT email FROM members WHERE email='av8rdude@gmail.com'), 2019),
     (7, (SELECT email FROM members WHERE email='av8rdude@gmail.com'), (SELECT email FROM members WHERE email='geoff.bulson@gmail.com'), 2019),
     (8, (SELECT email FROM members WHERE email='aaroncmears@gmail.com'), (SELECT email FROM members WHERE email='lexie66allen@gmail.com'), 2019);
+    
+INSERT INTO combos(giver, reciever, year)
+VALUES
+('tina@gmail.com', 'aaron@gmail.com', 2019),
+('tori@gmail.com', 'eric@gmail.com', 2019),
+('eric@gmail.com', 'dan@gmail.com', 2019),
+('geoff@gmail.com', 'tina@gmail.com', 2019),
+('lexi@gmail.com', 'tori@gmail.com', 2019),
+('dan@gmail.com', 'kevin@gmail.com', 2019),
+('kevin@gmail.com', 'geoff@gmail.com', 2019),
+('aaron@gmail.com', 'lexi@gmail.com', 2019);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

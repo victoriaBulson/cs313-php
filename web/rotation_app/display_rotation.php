@@ -18,7 +18,6 @@
     $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
     $stmt->execute();
     $giver_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    echo 'check giver_rows: <br>';
 
     if(empty($giver_rows)){
         //query number of family members
@@ -36,13 +35,18 @@
         $stmt->execute();
         $initialized_years = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
-        if(empty($initialized_years)){
-            echo "Initialize list";
-        }
-        
+        //variables for program logic
         $num_members = sizeof($members);
         $rotation_life = $num_members - 2;
         
+        //check for initialized_list
+        if(!empty($initialized_years)){
+            $year_initialized = $initialized_years[0];
+            $years_used = $year - $year_initialized;
+        } else{
+            include 'initialize_list.php';
+            
+        }
         
         
     }
