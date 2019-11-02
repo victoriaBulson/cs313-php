@@ -37,6 +37,7 @@
 
     foreach ($slots as $slot){
         echo $slot[0]. '<br>';
+        echo $slots_counter;
     }
     
 ?>
