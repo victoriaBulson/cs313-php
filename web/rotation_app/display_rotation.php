@@ -19,8 +19,6 @@
     $stmt->execute();
     $giver_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
-    echo 'queried';
-
     if(empty($rows)){
         //Calculate new combos.
         echo 'empty';
@@ -38,7 +36,7 @@
         $reciever_row = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         //display combo
-        echo $giver_row['name']. '......', $reciever_row[0]['name']. '<br>';
+        echo $giver_row['name']. '......'. $reciever_row[0]['name']. '<br>';
     }
 
 
