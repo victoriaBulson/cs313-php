@@ -7,6 +7,7 @@
     
     //populate slots with members
     foreach($members as $member){
+        echo $member'email';
         if (!$skip.in_array($member['email'])){
             $query='SELECT member1, member2 FROM partners
                 WHERE member1=:member OR member2=:member;';
@@ -36,7 +37,7 @@
     }
 
     foreach ($slots as $slot){
-        echo $slot[0]. '<br>';
+        //echo $slot[0]. '<br>';
     }
     
 ?>
