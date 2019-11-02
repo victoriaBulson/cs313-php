@@ -49,7 +49,7 @@
             unset($slots[$next_slot]);
         }
         }else{
-            unset($slots[0]);
+            array_pop($end);
         }
         
     }
