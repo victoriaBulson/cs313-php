@@ -28,7 +28,7 @@
         $stmt->execute();
         $members = $stmt->fetchAll(PDO::FETCH_ASSOC);
         //query year initialized
-        $query='SELECT year_initialized FROM initialized_lists
+        $query='SELECT year_initialized FROM initial_lists
                 WHERE family=:family;';
         $stmt=$db->prepare($query);
         $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
