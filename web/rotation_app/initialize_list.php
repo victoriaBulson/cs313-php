@@ -42,11 +42,13 @@
         //push items in slot into intial_list
         $max = sizeof($slots) - 1;
         if($max > 0){
-            $next_slot= rand(0, $max);
+            #$next_slot= rand(0, $max);
+            $count = 0
             error_log($next_slot);
-            foreach($slots[$next_slot] as $member){
+            foreach($slots[$count] as $member){
                 error_log('FOR EACH!');
                 array_push($initial_list, $member);
+                $count++
             }
             unset($slots[$next_slot]);
         }else{
