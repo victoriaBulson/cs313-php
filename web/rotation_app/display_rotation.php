@@ -10,6 +10,7 @@
     
     if(empty($rows)){
         //Calculate new combos.
+        echo 'empty';
     }
     
     foreach ($rows as $row){
