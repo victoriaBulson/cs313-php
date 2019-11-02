@@ -45,6 +45,7 @@
             $next_slot= rand(0, $max);
             error_log($next_slot);
             foreach($slots[$next_slot] as $member){
+                error_log('FOR EACH!');
                 array_push($initial_list, $member);
             }
             unset($slots[$next_slot]);
