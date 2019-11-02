@@ -46,11 +46,11 @@
         foreach($slots[$next_slot -1] as $member){
             array_push($initial_list, $member);
         }
-        unset($slots[$next_slot]);
+        unset($slots[$next_slot] -1);
     }
     
     foreach($initial_list as $member){
-        echo $member;
+        echo $member '<br>';
     }
     
 ?>
