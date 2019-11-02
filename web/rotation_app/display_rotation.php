@@ -43,7 +43,7 @@
         if(!empty($initialized_years)){
             $year_initialized = $initialized_years[0];
             $years_used = $year - $year_initialized;
-            
+            //check for rotation life
             if($years_used = $rotation_life)
                 include 'initialize_list.php';
         } else{
