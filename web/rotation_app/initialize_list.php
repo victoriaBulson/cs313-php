@@ -44,12 +44,14 @@
         error_log($max);
         if($max > 0){
             $next_slot= rand(0, $max);
-        }else($next_slot=0);
-        error_log($next_slot);
-        foreach($slots[$next_slot] as $member){
+            foreach($slots[$next_slot] as $member){
             array_push($initial_list, $member);
+            unset($slots[$next_slot]);
         }
-        unset($slots[$next_slot]);
+        }else{
+            unset($slots[0]);
+        }
+        
     }
     
     foreach($initial_list as $member){
