@@ -38,7 +38,7 @@
     //populate intial list randomly
     $initial_list=[];
     echo sizeof($slots);
-    while(sizeof($initial_list) < $num_members){
+    while(!empty($slots)){
         //push items in slot into intial_list
         $next_slot= rand(0, (sizeof($slots)));
         echo '<br>Next slot: '. $next_slot;
