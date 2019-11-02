@@ -60,7 +60,7 @@
             // Use the ARRAY_APPEND SQL function to use PDO to add to an array
             $query="UPDATE initial_lists
                     SET initial_list = ARRAY_APPEND(initial_list, :arr)
-                    WHERE family=:family AND initialized_year=:year";
+                    WHERE family=:family AND year_initialized=:year";
             $stmt=$db->prepare($query);
             $stmt->bindParam(":family", $family);
             $stmt->bindParam(":year", $year);
