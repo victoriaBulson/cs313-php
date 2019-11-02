@@ -43,9 +43,9 @@
         $next_slot= rand(0, (sizeof($slots)));
         echo '<br>Next slot: '. $next_slot;
         echo '<br>Max: '. sizeof($slots)-1;
-        #foreach($slots[$next_slot] as $member){
-         #   array_push($initial_list, $member);
-        #}
+        foreach($slots[$next_slot] as $member){
+            array_push($initial_list, $member);
+        }
         unset($slots[$next_slot]);
     }
     
