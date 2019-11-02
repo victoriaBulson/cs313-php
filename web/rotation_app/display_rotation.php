@@ -71,6 +71,8 @@
                 $stmt->execute();
             }
         }
+        
+        echo "HEY THERE!";
     }
     /*
     foreach ($giver_rows as $giver_row){
