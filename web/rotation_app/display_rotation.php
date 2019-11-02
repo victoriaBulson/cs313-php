@@ -49,18 +49,26 @@
         //Initialize new list
         if(empty($initialized_years) || years_used == $rotation_life){
             include 'initialize_list.php';
-            $query='INSERT INTO initial_lists
-                    (initial_list, year_initialized, family)
-                    VALUES
-                    (ARRAY_APPEND(initial_list, :arr), :year, :family);';
+            $query='INSERT INTO initial_lists (year_initialized, family)
+                    VALUES (:year, :family);';
             $stmt=$db->prepare($query);
             $stmt->bindvalue(':year', $year, PDO::PARAM_STR);
             $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
-            foreach($initial_list as $member){
-                $stmt->bindParam(":arr", $member);
-                $stmt->execute();
+            $stmt->execute();
+            
+            // Use a PDO for efficiency and ease of use
+            // Use the ARRAY_APPEND SQL function to use PDO to add to an array
+            $query="UPDATE initial_lists
+                    SET initial_list = ARRAY_APPEND(initial_list, :arr)
+                    WHERE family=:family AND initialized_year=:year";
+            $stmt=$db->prepare($query);
+            $stmt->bindParam(":family", $family);
+            $stmt->bindParam(":year", $year);
+            // Loop through each element, binding it to the PDO and executing again
+            foreach($initial_list as $elem){
+                $q_up->bindParam(":arr", $elem);
+                $q_up->execute();
             }
-        }
         
         
     }
