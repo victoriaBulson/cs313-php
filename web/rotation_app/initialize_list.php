@@ -17,7 +17,6 @@
             
             //if member is part of a couple
             if (!empty($partners)){
-                echo $partners[0]['member1']. '<br>', $partners[0]['member2'];
                 $slots[$slots_counter] = array($partners[0]['member1'], $partners[0]['member2']);
                 $slots_counter++;
         
@@ -37,7 +36,7 @@
     }
 
     foreach ($slots as $slot){
-        echo $slot;
+        echo $slot[0]. '<br>';
     }
     
 ?>
