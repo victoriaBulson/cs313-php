@@ -54,7 +54,7 @@
                     VALUES
                     (:initial_list, :year, :family);';
             $stmt=$db->prepare($query);
-            $stmt->bindvalue(':initial_list', $initial_list, PDO::PARAM_STR);
+            $stmt->bindvalue(':initial_list', $initial_list);
             $stmt->bindvalue(':year', $year, PDO::PARAM_STR);
             $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
             $stmt->execute();
