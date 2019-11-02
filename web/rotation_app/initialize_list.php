@@ -22,10 +22,10 @@
                 $slots_counter++;
         
                 if ($member['email'] == $partners[0]['member1']){
-                    $skip[$skip_counter] = $partners[0]['member2']
-                        $skip_counter++;
+                    $skip[$skip_counter] = $partners[0]['member2'];
+                    $skip_counter++;
                 } else{
-                    $skip[$skip_counter] = $partners[0]['member1']
+                    $skip[$skip_counter] = $partners[0]['member1'];
                         $skip_counter++;
                 }
             //if member is an individual
