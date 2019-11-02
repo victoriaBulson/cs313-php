@@ -66,8 +66,8 @@
             $stmt->bindParam(":year", $year);
             // Loop through each element, binding it to the PDO and executing again
             foreach($initial_list as $elem){
-                $q_up->bindParam(":arr", $elem);
-                $q_up->execute();
+                $stmt->bindParam(":arr", $elem);
+                $stmt->execute();
             }
         }
     }
