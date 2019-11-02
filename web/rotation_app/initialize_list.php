@@ -41,12 +41,12 @@
     
     foreach($slots as $slot){
         foreach($slot as $member){
-            echo $member. '<br>';
+            array_push($initial_list, $member);
         }
     }
     
-    #foreach($initial_list as $member){
-     #   echo $member. '<br>';
-    #}
+    foreach($initial_list as $member){
+        echo $member. '<br>';
+    }
     
 ?>
