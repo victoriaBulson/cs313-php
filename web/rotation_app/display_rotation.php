@@ -44,6 +44,8 @@
         if(!empty($initialized_years)){
             //TODO: check for most recent initialized year
             $year_initialized = $initialized_years[0];
+            echo $year. '<br>';
+            echo $year_initialized. '<br>';
             $years_used = $year - $year_initialized;
             echo $years_used;
         }
