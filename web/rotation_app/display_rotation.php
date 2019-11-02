@@ -9,7 +9,7 @@
     $stmt->bindvalue(':year', $year, PDO::PARAM_INT);
     $stmt->execute();
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    echo '<br>AFTER QUERY<br>'
+    echo '<br>AFTER QUERY<br>';
     echo $rows[0]['giver'];
     if(empty($rows)){
         //Calculate new combos.
