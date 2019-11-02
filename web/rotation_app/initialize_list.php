@@ -40,11 +40,11 @@
     echo sizeof($slots);
     while(!empty($slots)){
         //push items in slot into intial_list
-        $next_slot= rand(0, (sizeof($slots) +1));
-        foreach($slots[$next_slot -1] as $member){
+        $next_slot= rand(0, (sizeof($slots) + 1)) -1;
+        foreach($slots[$next_slot] as $member){
             array_push($initial_list, $member);
         }
-        unset($slots[$next_slot -1]);
+        unset($slots[$next_slot]);
     }
     
     foreach($initial_list as $member){
