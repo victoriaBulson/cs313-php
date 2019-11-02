@@ -19,7 +19,7 @@
     $stmt->execute();
     $giver_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
-    if(empty($rows)){
+    if(empty($giver_rows)){
         //Calculate new combos.
         echo 'empty';
     }
