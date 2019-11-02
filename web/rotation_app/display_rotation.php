@@ -9,7 +9,7 @@
 
     //get givers name
     $query='SELECT c.reciever, m.name
-            FROM combos c JOIN members m;
+            FROM combos c JOIN members m
             ON c.giver=m.email
             WHERE c.year=:year
             AND m.family=:family;';
