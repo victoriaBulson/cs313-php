@@ -7,7 +7,7 @@
     
     //populate slots with members
     foreach($members as $member){
-        if (!$skip.includes($member['email'])){
+        if (!$skip.in_array($member['email'])){
             $query='SELECT member1, member2 FROM partners
                 WHERE member1=:member OR member2=:member;';
             $stmt=$db->prepare($query);
