@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if (isset($_SESSION['unique_username'])){
+        if ($_SESSION['invalidLogin'] == FALSE){
+            echo 'This username is already in use. Please try again.';
+        }
+    }
+?>
 <html lang="en">
 <head>
     <meta charset="utf-8">
