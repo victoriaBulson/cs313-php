@@ -4,27 +4,32 @@
     require 'db_connect.php';
     $db=get_db();
 
-    echo 'FIRST!<br>';
-    //Get combos from year
+    $family = $_SESSION['username'];
     $year = $_GET['year'];
-    echo $year;
-    $query='SELECT giver, reciever FROM combos WHERE year=:year;';
+    echo $family;
+    
+    //get givers name
+    $query='SELECT c.reciever, m.name
+            FROM combos c JOIN members m;
+            ON c.giver=m.email
+            WHERE c.year=:year
+            AND m.family=:family;';
     $stmt=$db->prepare($query);
     $stmt->bindvalue(':year', $year, PDO::PARAM_INT);
+    $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
     $stmt->execute();
-    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    echo '<br>AFTER QUERY<br>';
-    echo $rows[0]['giver'];
+    $giver_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
     if(empty($rows)){
         //Calculate new combos.
         echo 'empty';
     }
-    echo 'HERE!';
-    foreach ($rows as $row){
-        echo '! Empty';
-        echo $row['giver'];
+
+    foreach ($giver_rows as $row){
+        //get recievers name
+        echo $row['name'];
+
     }
-    statement
 
 
 ?>
