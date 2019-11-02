@@ -40,7 +40,7 @@
     echo sizeof($slots);
     while(!empty($slots)){
         //push items in slot into intial_list
-        $next_slot= rand(0, (sizeof($slots)));
+        $next_slot= rand(0, (sizeof($slots) -1));
         echo '<br>Next slot: '. $next_slot;
         echo '<br>Max: '. sizeof($slots)-1;
         foreach($slots[$next_slot] as $member){
