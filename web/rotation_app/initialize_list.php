@@ -40,7 +40,8 @@
     while(sizeof($initial_list) < $num_members){
         //push items in slot into intial_list
         $next_slot= rand(0, (sizeof($slots) -1));
-        echo $next_slot;
+        echo '<br>Next slot: '. $next_slot;
+        echo '<br>Max: '. sizeof($slots)-1;
         #foreach($slots[$next_slot] as $member){
          #   array_push($initial_list, $member);
         #}
