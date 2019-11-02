@@ -18,7 +18,8 @@
     $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
     $stmt->execute();
     $giver_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+    
+    //Year exists in combos
     if(empty($giver_rows)){
         //query number of family members
         $query='SELECT email FROM members
@@ -44,10 +45,7 @@
         if(!empty($initialized_years)){
             //TODO: check for most recent initialized year
             $year_initialized = $initialized_years[0]['year_initialized'];
-            echo $year. '<br>';
-            echo $year_initialized. '<br>';
             $years_used = $year - $year_initialized;
-            echo $years_used;
         }
         //Initialize new list
         if(empty($initialized_years) || years_used == $rotation_life){
@@ -73,25 +71,9 @@
                 $stmt->execute();
             }
         }
-        
-        echo "HEY THERE!";
+    } else{ 
+        include 'display_combos.php';
     }
-    /*
-    foreach ($giver_rows as $giver_row){
-        //get recievers name
-        $reciever = $giver_row['reciever'];
-        $query='SELECT m.name FROM combos c JOIN members m
-                ON c.reciever=m.email
-                WHERE m.email=:reciever;';
-        $stmt=$db->prepare($query);
-        $stmt->bindvalue(':reciever', $reciever, PDO::PARAM_STR);
-        $stmt->execute();
-        $reciever_row = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        
-        //display combo
-        echo $giver_row['name']. '......'. $reciever_row[0]['name']. '<br>';
-    }
-    */
 
 
 ?>
