@@ -45,11 +45,14 @@
         if($max > 0){
             $next_slot= rand(0, $max);
             foreach($slots[$next_slot] as $member){
-            array_push($initial_list, $member);
+                array_push($initial_list, $member);
+            }
             unset($slots[$next_slot]);
-        }
         }else{
-            array_pop($slots);
+            foreach($slots[$next_slot] as $member){
+                array_push($initial_list, $member);
+            }
+                array_pop($slots);
         }
         
     }
