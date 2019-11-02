@@ -12,7 +12,7 @@
         //Calculate new combos.
         echo 'empty';
     }
-    
+    echo "HERE!";
     foreach ($rows as $row){
         echo '! Empty';
         echo $row['giver'];
