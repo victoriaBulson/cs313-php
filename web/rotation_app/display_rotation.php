@@ -52,9 +52,8 @@
             $query='INSERT INTO initial_lists
                     (initial_list, year_initialized, family)
                     VALUES
-                    (:initial_list, :year, :family);';
+                    ($initial_list, :year, :family);';
             $stmt=$db->prepare($query);
-            $stmt->bindvalue(':initial_list', $initial_list);
             $stmt->bindvalue(':year', $year, PDO::PARAM_STR);
             $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
             $stmt->execute();
