@@ -32,8 +32,8 @@
         $members = $stmt->fetchAll(PDO::FETCH_ASSOC);
         //query year initialized
         $query='SELECT year_initialized FROM initial_lists
-                WHERE family=:family;
-                ORDER BY year_initialized DESC';
+                WHERE family=:family
+                ORDER BY year_initialized DESC;';
         $stmt=$db->prepare($query);
         $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
         $stmt->execute();
