@@ -14,12 +14,23 @@
     $years_used = $year - $year_initialized;
     $offset = $first_year_offset + $years_used;
     
-    //remove brackets
+    //convert initial_list to array
     $initial_list = substr($initial_list, 1, -1);
-    $initial_list = explode (",", $initial_list); 
-    
+    $initial_list = explode (",", $initial_list);
+
+    //Insert combos
+    $last_index = sizeof($initial_list) - 1;
+    $index = 0;
     foreach($initial_list as $member){
-        echo $member;
+        $reciever_index = ($index + $offset) % $last_index;
+        $reciever = $initial_list[$reciever_index];
+        $query='INSERT INTO combos (giver, reciever, year)
+                VALUES (:giver, :reciever, :year);';
+        $stmt=$db->prepare($query);
+        $stmt->bindvalue(':giver', $member, PDO::PARAM_STR);
+        $stmt->bindvalue(':reciever', $reciever, PDO::PARAM_STR);
+        $stmt->bindvalue(':year', $year, PDO::PARAM_STR);
+        $stmt->execute();
     }
 
 
