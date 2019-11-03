@@ -72,9 +72,8 @@
                 $stmt->bindParam(":arr", $elem);
                 $stmt->execute();
             }
-            
-            include 'create_combos.php';
         }
+        include 'create_combos.php';
     //year exists in combos
     } else{ 
         include 'display_combos.php';
