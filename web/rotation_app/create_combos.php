@@ -31,6 +31,7 @@
         $stmt->bindvalue(':reciever', $reciever, PDO::PARAM_STR);
         $stmt->bindvalue(':year', $year, PDO::PARAM_STR);
         $stmt->execute();
+        index++;
     }
 
 
