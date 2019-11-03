@@ -17,8 +17,10 @@
     //remove brackets
     $initial_list = substr($initial_list, 1, -1);
     $initial_list = explode (",", $initial_list); 
-    echo $initial_list[0];
-
+    
+    foreach($initial_list as $member){
+        echo $member;
+    }
 
 
 ?>
