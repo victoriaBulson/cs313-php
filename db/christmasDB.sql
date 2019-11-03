@@ -21,10 +21,10 @@ reciever      TEXT        NOT NULL REFERENCES members(email),
 year          INT         NOT NULL         
 );
 
-CREATE TABLE initialized_lists(
+CREATE TABLE initial_lists(
 list_id          SERIAL PRIMARY KEY,
 family           TEXT   NOT NULL REFERENCES accounts(username),
-initial_list     INT[]  NOT NULL,
+initial_list     VARCHAR(20)[],
 year_initialized INT    NOT NULL
 );
 
