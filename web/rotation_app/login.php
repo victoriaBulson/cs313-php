@@ -26,7 +26,7 @@
         Username<br><input type="text" name="username"><br>
         Password<br><input type="text" name="password"><br>
         <div style="display:flex;">
-        <button class="welcome_btn" type="submit">Log In</button>
+        <button class="login_btn" type="submit">Log In</button>
         </div>
     </form>
     <button class="welcome_btn" onclick="window.location.href = 'sign_up.php' ">Sign Up</button>
