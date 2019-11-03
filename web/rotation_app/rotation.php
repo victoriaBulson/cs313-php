@@ -31,7 +31,7 @@
     echo '<h1 style=\'text-align:center\'>'. $family_name .'</h1>'
     ?>
     <form action="rotation_logic.php" method="get">
-        <select id="year" name="year"></select><br>
+        Select Year: <select id="year" name="year"></select><br>
         <button class='welcome_btn' type=submit>Get Rotation!</button>
     </form>
     

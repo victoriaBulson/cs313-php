@@ -53,10 +53,6 @@ input[type=text] {
     margin:.25em;
 }
 
-input[type=select] {
-    margin:auto;
-}
-
 .login_btn{
     background-color:#cf2727;
     border: none;
