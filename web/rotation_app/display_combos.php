@@ -1,5 +1,4 @@
 <?php
-include 'header.php';
 //get givers name
     $query='SELECT c.reciever, m.name
             FROM combos c JOIN members m
