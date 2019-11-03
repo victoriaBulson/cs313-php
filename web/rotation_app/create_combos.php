@@ -15,7 +15,7 @@
     $offset = $first_year_offset + $years_used;
     
     //
-    echo $initial_list[0];
+    echo $initial_list[1];
 
 
 
