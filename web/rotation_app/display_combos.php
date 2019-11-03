@@ -14,7 +14,7 @@
     //
     $query='SELECT name from accounts
             WHERE username=$family;';
-    $stmt=$db->prepare($query);\
+    $stmt=$db->prepare($query);
     $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
     $stmt->execute();
     $name_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
