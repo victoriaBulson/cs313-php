@@ -38,6 +38,12 @@
     </div>
     <button type="submit" class="new_field">Create Group</button>
     </form>
-    
+    <?php
+    if (isset($_SESSION['unique_username'])){
+        if ($_SESSION['invalidLogin'] == FALSE){
+            echo 'This username is already in use. Please ';
+        }
+    }
+    ?>
 </body>
 </html>
