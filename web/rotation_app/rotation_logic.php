@@ -74,10 +74,8 @@
             }
         }
         include 'create_combos.php';
-    //year exists in combos
-    } else{ 
-        include 'display_combos.php';
     }
+    include 'display_combos.php';
 
 
 ?>
