@@ -51,7 +51,7 @@
             $years_used = $year - $year_initialized;
         }
         //initial list dne or invalid
-        if(empty($initialized_years) || years_used == $rotation_life){
+        if(empty($initialized_years) || $years_used == $rotation_life){
             //create initial list
             include 'initialize_list.php';
             //insert initial list row
