@@ -10,7 +10,6 @@
     $stmt->execute();
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     $family_name = $rows[0]['name'];
-    
 ?>
 
 <html lang="en">
@@ -28,7 +27,9 @@
 </head>
 <?php include 'header.php';?>
 <body onload="populateYear()">
-    <?php echo '<h1>'. $family_name .'</h1>'?>
+    <?php
+    echo '<h1 style=\'text-align:center\'>'. $family_name .'</h1>'
+    ?>
     <form action="rotation_logic.php" method="get">
         <select id="year" name="year"></select><br>
         <button class='welcome_btn' type=submit>Get Rotation!</button>
