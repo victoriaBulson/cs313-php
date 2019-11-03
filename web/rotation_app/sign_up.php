@@ -38,6 +38,7 @@
     </div>
     <button type="submit" class="new_field">Create Group</button>
     </form>
+    <p style='color:red;'>
     <?php
     if (isset($_SESSION['unique_username'])){
         if ($_SESSION['invalidLogin'] == FALSE){
@@ -45,5 +46,6 @@
         }
     }
     ?>
+    </p>
 </body>
 </html>
