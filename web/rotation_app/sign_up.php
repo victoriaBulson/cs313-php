@@ -22,9 +22,9 @@
 <?php include 'header.php';?>
 <body>
     <form method="post" action="save_new_account.php?action=new_account">
-    Username:<input type="text" name="username"><br>
-    Password:<input type="text" name="password"><br>
-    Group Name:<input type="text" name="group_name"><br>
+    Username:<input type="text" name="username" required><br>
+    Password:<input type="text" name="password" required><br>
+    Group Name:<input type="text" name="group_name" required><br>
     Comment:<input type="text" name="comment"><br>
     <div id="couple_fields">
         <div class="add_field" id="couple_btn" onclick="addCouple()">
