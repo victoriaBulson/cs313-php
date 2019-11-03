@@ -30,7 +30,7 @@
 <body onload="populateYear()">
     <?php echo '<h1>'. $family_name .'</h1>'?>
     <form action="rotation_logic.php" method="get">
-        <select id="year" name="year"></select>
+        <select id="year" name="year"></select><br>
         <button class='welcome_btn' type=submit>Get Rotation!</button>
     </form>
     
