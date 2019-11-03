@@ -19,10 +19,10 @@
     $initial_list = explode (",", $initial_list);
 
     //Insert combos
-    $last_index = sizeof($initial_list) - 1;
+    $mod = sizeof($initial_list);
     $index = 0;
     foreach($initial_list as $member){
-        $reciever_index = ($index + $offset) % $last_index;
+        $reciever_index = ($index + $offset) % $mod;
         $reciever = $initial_list[$reciever_index];
         $query='INSERT INTO combos (giver, reciever, year)
                 VALUES (:giver, :reciever, :year);';
