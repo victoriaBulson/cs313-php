@@ -10,6 +10,7 @@
     $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
     $stmt->execute();
     $giver_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    echo '<h1>'.$family.' gift rotation for '.$year.'</h1>';
 foreach ($giver_rows as $giver_row){
         //get recievers name
         $reciever = $giver_row['reciever'];
@@ -23,6 +24,6 @@ foreach ($giver_rows as $giver_row){
         
         //display combo
         echo $giver_row['name']. '......'. $reciever_row[0]['name']. '<br>';
-        echo '<button onclick="window.location.href = \'rotation.php\' ">Back</button>';
     }
+    echo '<button onclick="window.location.href = \'rotation.php\' ">Back</button>';
 ?>
