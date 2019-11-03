@@ -41,7 +41,7 @@
     <?php
     if (isset($_SESSION['unique_username'])){
         if ($_SESSION['invalidLogin'] == FALSE){
-            echo 'This username is already in use. Please ';
+            echo 'This username is already in use. Please try again';
         }
     }
     ?>
