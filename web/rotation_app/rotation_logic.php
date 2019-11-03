@@ -19,8 +19,10 @@
     $stmt->execute();
     $giver_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
-    //Year exists in combos
+    //Year dne in combos
     if(empty($giver_rows)){
+        
+        //PREP TO CHECK FOR LISTS
         //query number of family members
         $query='SELECT email FROM members
                 WHERE family=:family;';
@@ -30,7 +32,8 @@
         $members = $stmt->fetchAll(PDO::FETCH_ASSOC);
         //query year initialized
         $query='SELECT year_initialized FROM initial_lists
-                WHERE family=:family;';
+                WHERE family=:family;
+                ORDER BY year_initialized DESC';
         $stmt=$db->prepare($query);
         $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
         $stmt->execute();
@@ -41,36 +44,38 @@
         $rotation_life = $num_members - 2;
         $years_used = 0;
         
-        //check for initialized_list
+        //CHECK FOR INITIALIZED LIST
+        //initial list exists
         if(!empty($initialized_years)){
-            //TODO: check for most recent initialized year
             $year_initialized = $initialized_years[0]['year_initialized'];
             $years_used = $year - $year_initialized;
         }
-        //Initialize new list
+        //initial list dne or invalid
         if(empty($initialized_years) || years_used == $rotation_life){
+            //create initial list
             include 'initialize_list.php';
+            //insert initial list row
             $query='INSERT INTO initial_lists (year_initialized, family)
                     VALUES (:year, :family);';
             $stmt=$db->prepare($query);
             $stmt->bindvalue(':year', $year, PDO::PARAM_STR);
             $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
             $stmt->execute();
-            
-            // Use a PDO for efficiency and ease of use
-            // Use the ARRAY_APPEND SQL function to use PDO to add to an array
+            //update with contents of initial list
             $query="UPDATE initial_lists
                     SET initial_list = ARRAY_APPEND(initial_list, :arr)
                     WHERE family=:family AND year_initialized=:year;";
             $stmt=$db->prepare($query);
             $stmt->bindParam(":family", $family);
             $stmt->bindParam(":year", $year);
-            // Loop through each element, binding it to the PDO and executing again
             foreach($initial_list as $elem){
                 $stmt->bindParam(":arr", $elem);
                 $stmt->execute();
             }
+            
+            include 'create_combos.php';
         }
+    //year exists in combos
     } else{ 
         include 'display_combos.php';
     }
