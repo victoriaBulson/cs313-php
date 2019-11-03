@@ -1,10 +1,5 @@
 <?php
     session_start();
-    if (isset($_SESSION['unique_username'])){
-        if ($_SESSION['invalidLogin'] == FALSE){
-            echo 'This username is already in use. Please ';
-        }
-    }
 ?>
 <html lang="en">
 <head>
@@ -38,7 +33,7 @@
     </div>
     <button type="submit" class="new_field login_btn">Create Group</button>
     </form>
-    <p style='color:red;'>
+    <p style='color:red; margin-top:-2em; text-align:center;'>
     <?php
     if (isset($_SESSION['unique_username'])){
         if ($_SESSION['invalidLogin'] == FALSE){
