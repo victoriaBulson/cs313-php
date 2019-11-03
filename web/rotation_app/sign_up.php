@@ -36,7 +36,7 @@
         <img style="width:1em;" src="img/gift_plus.svg"  alt="Plus Icon Designed by Freepik from www.flaticon.com"/> Add Individual
         </div>
     </div>
-    <button type="submit" class="new_field">Create Group</button>
+    <button type="submit" class="new_field login_btn">Create Group</button>
     </form>
     <p style='color:red;'>
     <?php
