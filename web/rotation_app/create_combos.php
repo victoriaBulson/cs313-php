@@ -14,7 +14,8 @@
     $years_used = $year - $year_initialized;
     $offset = $first_year_offset + $years_used;
     
-    //
+    //remove brackets
+    $initial_list = substr($initial_list, 1, -1);
     echo $initial_list;
 
 
