@@ -23,5 +23,6 @@ foreach ($giver_rows as $giver_row){
         
         //display combo
         echo $giver_row['name']. '......'. $reciever_row[0]['name']. '<br>';
+        echo '<button onclick="window.location.href = \'rotation.php\' ">Back</button>'
     }
 ?>
