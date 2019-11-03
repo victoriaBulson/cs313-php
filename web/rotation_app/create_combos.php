@@ -16,7 +16,8 @@
     
     //remove brackets
     $initial_list = substr($initial_list, 1, -1);
-    echo $initial_list;
+    $initial_list = explode (",", $initial_list); 
+    echo $initial_list[0];
 
 
 
