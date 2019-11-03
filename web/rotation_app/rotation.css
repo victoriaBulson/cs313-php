@@ -54,13 +54,7 @@ input[type=text] {
 }
 
 input[type=select] {
-    font-size: 16px;
-    width: 25%%;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid red;
-    border-radius: 1em;
-    margin:.25em;
+    margin:auto;
 }
 
 .login_btn{
