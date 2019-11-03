@@ -12,15 +12,33 @@ include 'header.php';
     $stmt->execute();
     $giver_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    //
+    //Get family Name
     $query='SELECT name from accounts
             WHERE username=:family;';
     $stmt=$db->prepare($query);
     $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
     $stmt->execute();
     $name_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Gift Rotation</title>
+    <meta name="Description" content="Gift Rotation">
+    <meta name="Victoria Mears" content="Gift Rotation">
+    
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="rotation.css">
+    <script src="rotation.js"></script>
+</head>
+<?php include 'header.php';?>
+<body>
+    <?php
     echo '<h1>'.$name_rows[0]['name'].' gift rotation for '.$year.'</h1>';
-foreach ($giver_rows as $giver_row){
+    foreach ($giver_rows as $giver_row){
         //get recievers name
         $reciever = $giver_row['reciever'];
         $query='SELECT m.name FROM combos c JOIN members m
@@ -35,4 +53,7 @@ foreach ($giver_rows as $giver_row){
         echo $giver_row['name']. '......'. $reciever_row[0]['name']. '<br>';
     }
     echo '<button onclick="window.location.href = \'rotation.php\' ">Back</button>';
-?>
+    ?>
+    
+</body>
+</html>

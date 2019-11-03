@@ -34,7 +34,6 @@
         <button type=submit>Get Rotation!</button>
     </form>
     
-    
   
 </body>
 </html>
