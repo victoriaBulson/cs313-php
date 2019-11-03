@@ -10,7 +10,15 @@
     $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
     $stmt->execute();
     $giver_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    echo '<h1>'.$family.' gift rotation for '.$year.'</h1>';
+
+    //
+    $query='SELECT name from accounts
+            WHERE username=$family;';
+    $stmt=$db->prepare($query);\
+    $stmt->bindvalue(':family', $family, PDO::PARAM_STR);
+    $stmt->execute();
+    $name_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    echo '<h1>'.$name_rows[0]['name'].' gift rotation for '.$year.'</h1>';
 foreach ($giver_rows as $giver_row){
         //get recievers name
         $reciever = $giver_row['reciever'];
