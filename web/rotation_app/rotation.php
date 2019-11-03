@@ -28,7 +28,7 @@
 <?php include 'header.php';?>
 <body onload="populateYear()">
     <?php
-    echo '<h1 style=\'text-align:center\'>'. $family_name .'</h1>'
+    echo '<h1 style=\'text-align:center; margin-bottom:2em;\'>'. $family_name .'</h1>'
     ?>
     <form action="rotation_logic.php" method="get">
         Select Year: <select id="year" name="year"></select><br>
