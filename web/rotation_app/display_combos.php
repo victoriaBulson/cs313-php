@@ -51,7 +51,7 @@
         //display combo
         echo $giver_row['name']. '......'. $reciever_row[0]['name']. '<br>';
     }
-    echo '<button onclick="window.location.href = \'rotation.php\' ">Back</button>';
+    echo '<button class=\'welcome_btn\' onclick="window.location.href = \'rotation.php\' ">Back</button>';
     ?>
     
 </body>
